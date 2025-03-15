@@ -1,0 +1,4837 @@
+../motion_planner/GoTo_State_Machine -x 0.967909 -y 0.187419 -a 3.927000 -v 1.355000 -z 1.265000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_students/ -e random_2 -advance 0.030000 -MaxAngle 0.785400 -selection 6 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file random_2 -nn_rec 0 -nn_unk 0 -search 1
+
+observations file: ../../data_students/random_2.raw
+
+ Radio robot 0.020000 
+( origen 0.967909 0.187419 3.927000 )
+( destination 1.355000 1.265000 )
+search method 1
+
+
+ ************************************************************
+distance destination 1.144998 threshold 0.075600
+1 Pose robot 0.967909 0.187419 3.927000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 3.582115
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 3.582115 quantized destination 0 
+quantized inputs 0
+intensity 0.762765 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 0
+Angle light 3.582115
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.172204 threshold 0.075600
+2 Pose robot 0.946696 0.166206 3.927000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 3.571202
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 3.571202 quantized destination 0 
+quantized inputs 0
+intensity 0.727770 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 0
+Angle light 3.571202
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.199543 threshold 0.075600
+3 Pose robot 0.925483 0.144992 3.927000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 3.560785
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 3.560785 quantized destination 0 
+quantized inputs 0
+intensity 0.694974 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 0
+Angle light 3.560785
+RIGHT
+Present State: 13 RIGHT
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 1.199543 threshold 0.075600
+4 Pose robot 0.925483 0.144992 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 4.346185
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 4.346185 quantized destination 0 
+quantized inputs 0
+intensity 0.694974 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 0
+Angle light 4.346185
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 1.199543 threshold 0.075600
+5 Pose robot 0.925483 0.144992 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.131584
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.131584 quantized destination 2 
+quantized inputs 0
+intensity 0.694974 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.131584
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.187648 threshold 0.075600
+6 Pose robot 0.904270 0.166205 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.108510
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.108510 quantized destination 2 
+quantized inputs 0
+intensity 0.708965 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.108510
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.176398 threshold 0.075600
+7 Pose robot 0.883056 0.187418 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.084980
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.084980 quantized destination 2 
+quantized inputs 0
+intensity 0.722589 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.084980
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.165812 threshold 0.075600
+8 Pose robot 0.861843 0.208631 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.091522
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.061010
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.091522
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.061010 quantized destination 2 
+quantized inputs 0
+intensity 0.735771 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.091522
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.098940
+intensity 0 obstacles 0 dest 2
+Angle light 5.061010
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 1.165812 threshold 0.075600
+9 Pose robot 0.861843 0.208631 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.099950
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.846411
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.099950
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.846411 quantized destination 2 
+quantized inputs 0
+intensity 0.735771 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.099950
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.099994
+intensity 0 obstacles 0 dest 2
+Angle light 5.846411
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.138699 threshold 0.075600
+10 Pose robot 0.861843 0.238631 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.088105
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.835265
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.088105
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.835265 quantized destination 2 
+quantized inputs 0
+intensity 0.771226 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.088105
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.098513
+intensity 0 obstacles 0 dest 2
+Angle light 5.835265
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.111735 threshold 0.075600
+11 Pose robot 0.861843 0.268631 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.090724
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.823578
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.090724
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.823578 quantized destination 2 
+quantized inputs 0
+intensity 0.809091 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.090724
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.098840
+intensity 0 obstacles 0 dest 2
+Angle light 5.823578
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.084930 threshold 0.075600
+12 Pose robot 0.861843 0.298631 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.099295
+range observations.sensors[15] 0.100000
+light source angle 5.811312
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.099295
+noised range sensors[15] 0.100000
+angle_light 5.811312 quantized destination 2 
+quantized inputs 0
+intensity 0.849565 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.099295
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.099912
+intensity 0 obstacles 0 dest 2
+Angle light 5.811312
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 1.084930 threshold 0.075600
+13 Pose robot 0.861843 0.298631 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.313526
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.313526 quantized destination 3 
+quantized inputs 0
+intensity 0.849565 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.313526
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.056433 threshold 0.075600
+14 Pose robot 0.883056 0.319845 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.322285
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.322285 quantized destination 3 
+quantized inputs 0
+intensity 0.896017 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.322285
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 1.028021 threshold 0.075600
+15 Pose robot 0.904269 0.341058 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.331528
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.331528 quantized destination 3 
+quantized inputs 0
+intensity 0.946228 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.331528
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.999702 threshold 0.075600
+16 Pose robot 0.925482 0.362271 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.078760
+range observations.sensors[7] 0.089518
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.341296
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.078760
+noised range sensors[7] 0.089518
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.341296 quantized destination 3 
+quantized inputs 0
+intensity 1.000595 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.078760
+right side sensor[7] 0.089518
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.096035
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.341296
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.999702 threshold 0.075600
+17 Pose robot 0.925482 0.362271 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.097556
+range observations.sensors[4] 0.082127
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.839081
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.097556
+noised range sensors[4] 0.082127
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.839081 quantized destination 2 
+quantized inputs 0
+intensity 1.000595 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.097556
+right side sensor[4] 0.082127
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.097460
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.839081
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.972698 threshold 0.075600
+18 Pose robot 0.925482 0.392271 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.099546
+range observations.sensors[3] 0.073875
+range observations.sensors[4] 0.080513
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.825830
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.099546
+noised range sensors[3] 0.073875
+noised range sensors[4] 0.080513
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.825830 quantized destination 2 
+quantized inputs 0
+intensity 1.056924 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.099546
+right side sensor[3] 0.073875
+right side sensor[4] 0.080513
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.094242
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.825830
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.945874 threshold 0.075600
+19 Pose robot 0.925482 0.422271 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.073528
+range observations.sensors[3] 0.072393
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.811823
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.073528
+noised range sensors[3] 0.072393
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.811823 quantized destination 2 
+quantized inputs 0
+intensity 1.117721 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.073528
+right side sensor[3] 0.072393
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.093240
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.811823
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.919246 threshold 0.075600
+20 Pose robot 0.925482 0.452271 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.081249
+range observations.sensors[2] 0.072023
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.797003
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.081249
+noised range sensors[2] 0.072023
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.797003 quantized destination 2 
+quantized inputs 0
+intensity 1.183412 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.081249
+right side sensor[2] 0.072023
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.094159
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.797003
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.919246 threshold 0.075600
+21 Pose robot 0.925482 0.452271 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.090473
+range observations.sensors[4] 0.075419
+range observations.sensors[5] 0.094289
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.299218
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.090473
+noised range sensors[4] 0.075419
+noised range sensors[5] 0.094289
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.299218 quantized destination 3 
+quantized inputs 0
+intensity 1.183412 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.090473
+right side sensor[4] 0.075419
+right side sensor[5] 0.094289
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.095023
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.299218
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.890623 threshold 0.075600
+22 Pose robot 0.946695 0.473484 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.088177
+range observations.sensors[3] 0.061946
+range observations.sensors[4] 0.073181
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.309147
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.088177
+noised range sensors[3] 0.061946
+noised range sensors[4] 0.073181
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.309147 quantized destination 3 
+quantized inputs 0
+intensity 1.260700 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.088177
+right side sensor[3] 0.061946
+right side sensor[4] 0.073181
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.090413
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.309147
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.862094 threshold 0.075600
+23 Pose robot 0.967908 0.494698 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.099378
+range observations.sensors[2] 0.060550
+range observations.sensors[3] 0.069297
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.319735
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.099378
+noised range sensors[2] 0.060550
+noised range sensors[3] 0.069297
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.319735 quantized destination 3 
+quantized inputs 0
+intensity 1.345522 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.099378
+right side sensor[2] 0.060550
+right side sensor[3] 0.069297
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.091153
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.319735
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.833668 threshold 0.075600
+24 Pose robot 0.989121 0.515911 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.070649
+range observations.sensors[2] 0.072652
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.331046
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.070649
+noised range sensors[2] 0.072652
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.331046 quantized destination 3 
+quantized inputs 0
+intensity 1.438846 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.070649
+right side sensor[2] 0.072652
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.092913
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.331046
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.833668 threshold 0.075600
+25 Pose robot 0.989121 0.515911 1.570800 
+range observations.sensors[0] 0.076593
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.828832
+noised range sensors[0] 0.076593
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.828832 quantized destination 2 
+quantized inputs 0
+intensity 1.438846 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.076593
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.097074
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.828832
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.806819 threshold 0.075600
+26 Pose robot 0.989121 0.545911 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.812511
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.812511 quantized destination 2 
+quantized inputs 0
+intensity 1.536201 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.812511
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.780199 threshold 0.075600
+27 Pose robot 0.989121 0.575911 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.795074
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.795074 quantized destination 2 
+quantized inputs 0
+intensity 1.642815 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.795074
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.753834 threshold 0.075600
+28 Pose robot 0.989121 0.605911 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.776409
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.776409 quantized destination 2 
+quantized inputs 0
+intensity 1.759739 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.776409
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.753834 threshold 0.075600
+29 Pose robot 0.989121 0.605911 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.278624
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.278624 quantized destination 3 
+quantized inputs 0
+intensity 1.759739 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.278624
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.725038 threshold 0.075600
+30 Pose robot 1.010334 0.627124 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.290004
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.290004 quantized destination 3 
+quantized inputs 0
+intensity 1.902297 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.290004
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.696344 threshold 0.075600
+31 Pose robot 1.031547 0.648337 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.068924
+range observations.sensors[7] 0.074110
+range observations.sensors[8] 0.089626
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.302324
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.068924
+noised range sensors[7] 0.074110
+noised range sensors[8] 0.089626
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.302324 quantized destination 3 
+quantized inputs 0
+intensity 2.062304 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.068924
+right side sensor[7] 0.074110
+left side sensor[8] 0.089626
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.092879
+Average left side 0.098703
+intensity 0 obstacles 0 dest 3
+Angle light 0.302324
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.667764 threshold 0.075600
+32 Pose robot 1.052760 0.669551 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.044358
+range observations.sensors[6] 0.043120
+range observations.sensors[7] 0.046365
+range observations.sensors[8] 0.056073
+range observations.sensors[9] 0.080943
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.315701
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.044358
+noised range sensors[6] 0.043120
+noised range sensors[7] 0.046365
+noised range sensors[8] 0.056073
+noised range sensors[9] 0.080943
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.315701 quantized destination 3 
+quantized inputs 0
+intensity 2.242611 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.044358
+right side sensor[6] 0.043120
+right side sensor[7] 0.046365
+left side sensor[8] 0.056073
+left side sensor[9] 0.080943
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.079230
+Average left side 0.092127
+intensity 0 obstacles 1 dest 3
+Angle light 0.315701
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.667764 threshold 0.075600
+33 Pose robot 1.052760 0.669551 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.094345
+range observations.sensors[3] 0.043192
+range observations.sensors[4] 0.044134
+range observations.sensors[5] 0.050135
+range observations.sensors[6] 0.065438
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.813486
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.094345
+noised range sensors[3] 0.043192
+noised range sensors[4] 0.044134
+noised range sensors[5] 0.050135
+noised range sensors[6] 0.065438
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.813486 quantized destination 2 
+quantized inputs 0
+intensity 2.242611 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.094345
+right side sensor[3] 0.043192
+right side sensor[4] 0.044134
+right side sensor[5] 0.050135
+right side sensor[6] 0.065438
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.074655
+Average left side 0.100000
+intensity 0 obstacles 1 dest 2
+Angle light 5.813486
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.641157 threshold 0.075600
+34 Pose robot 1.052760 0.699551 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.047388
+range observations.sensors[2] 0.038823
+range observations.sensors[3] 0.035852
+range observations.sensors[4] 0.036634
+range observations.sensors[5] 0.041615
+range observations.sensors[6] 0.054317
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.792307
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.047388
+noised range sensors[2] 0.038823
+noised range sensors[3] 0.035852
+noised range sensors[4] 0.036634
+noised range sensors[5] 0.041615
+noised range sensors[6] 0.054317
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.792307 quantized destination 2 
+quantized inputs 1
+intensity 2.432605 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.047388
+right side sensor[2] 0.038823
+right side sensor[3] 0.035852
+right side sensor[4] 0.036634
+right side sensor[5] 0.041615
+right side sensor[6] 0.054317
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.056828
+Average left side 0.100000
+intensity 0 obstacles 1 dest 2
+Angle light 5.792307
+STOP
+Present State: 1 STOP
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.000000
+movement without noise: angle  0.000000 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.641157 threshold 0.075600
+35 Pose robot 1.052760 0.699551 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.047388
+range observations.sensors[2] 0.038823
+range observations.sensors[3] 0.035852
+range observations.sensors[4] 0.036634
+range observations.sensors[5] 0.041615
+range observations.sensors[6] 0.054317
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.792307
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.047388
+noised range sensors[2] 0.038823
+noised range sensors[3] 0.035852
+noised range sensors[4] 0.036634
+noised range sensors[5] 0.041615
+noised range sensors[6] 0.054317
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.792307 quantized destination 2 
+quantized inputs 1
+intensity 2.432605 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.047388
+right side sensor[2] 0.038823
+right side sensor[3] 0.035852
+right side sensor[4] 0.036634
+right side sensor[5] 0.041615
+right side sensor[6] 0.054317
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.056828
+Average left side 0.100000
+intensity 0 obstacles 1 dest 2
+Angle light 5.792307
+BACKWARD
+Present State: 2 BACKWARD, obstacle right
+Student FSM behavior avoidance destination: angle  0.000000 distance -0.030000
+movement without noise: angle  0.000000 distance -0.030000
+
+
+ ************************************************************
+distance destination 0.667764 threshold 0.075600
+36 Pose robot 1.052760 0.669551 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.094345
+range observations.sensors[3] 0.043192
+range observations.sensors[4] 0.044134
+range observations.sensors[5] 0.050135
+range observations.sensors[6] 0.065438
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.813486
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.094345
+noised range sensors[3] 0.043192
+noised range sensors[4] 0.044134
+noised range sensors[5] 0.050135
+noised range sensors[6] 0.065438
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.813486 quantized destination 2 
+quantized inputs 0
+intensity 2.242611 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.094345
+right side sensor[3] 0.043192
+right side sensor[4] 0.044134
+right side sensor[5] 0.050135
+right side sensor[6] 0.065438
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.074655
+Average left side 0.100000
+intensity 0 obstacles 1 dest 2
+Angle light 5.813486
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.667764 threshold 0.075600
+37 Pose robot 1.052760 0.669551 2.356200 
+range observations.sensors[0] 0.044357
+range observations.sensors[1] 0.043121
+range observations.sensors[2] 0.046366
+range observations.sensors[3] 0.056076
+range observations.sensors[4] 0.080952
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.028087
+noised range sensors[0] 0.044357
+noised range sensors[1] 0.043121
+noised range sensors[2] 0.046366
+noised range sensors[3] 0.056076
+noised range sensors[4] 0.080952
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.028087 quantized destination 2 
+quantized inputs 0
+intensity 2.242611 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.044357
+right side sensor[1] 0.043121
+right side sensor[2] 0.046366
+right side sensor[3] 0.056076
+right side sensor[4] 0.080952
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.071359
+Average left side 0.100000
+intensity 0 obstacles 1 dest 2
+Angle light 5.028087
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.659067 threshold 0.075600
+38 Pose robot 1.031547 0.690764 2.356200 
+range observations.sensors[0] 0.060240
+range observations.sensors[1] 0.058560
+range observations.sensors[2] 0.062968
+range observations.sensors[3] 0.076154
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 4.984804
+noised range sensors[0] 0.060240
+noised range sensors[1] 0.058560
+noised range sensors[2] 0.062968
+noised range sensors[3] 0.076154
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 4.984804 quantized destination 2 
+quantized inputs 0
+intensity 2.302189 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.060240
+right side sensor[1] 0.058560
+right side sensor[2] 0.062968
+right side sensor[3] 0.076154
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.082240
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 4.984804
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.651636 threshold 0.075600
+39 Pose robot 1.010334 0.711977 2.356200 
+range observations.sensors[0] 0.076122
+range observations.sensors[1] 0.074000
+range observations.sensors[2] 0.079570
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 4.940449
+noised range sensors[0] 0.076122
+noised range sensors[1] 0.074000
+noised range sensors[2] 0.079570
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 4.940449 quantized destination 2 
+quantized inputs 0
+intensity 2.354994 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.076122
+right side sensor[1] 0.074000
+right side sensor[2] 0.079570
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.091211
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 4.940449
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.645515 threshold 0.075600
+40 Pose robot 0.989120 0.733190 2.356200 
+range observations.sensors[0] 0.092004
+range observations.sensors[1] 0.089439
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 4.895163
+noised range sensors[0] 0.092004
+noised range sensors[1] 0.089439
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 4.895163 quantized destination 2 
+quantized inputs 0
+intensity 2.399865 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.092004
+right side sensor[1] 0.089439
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.097680
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 4.895163
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.645515 threshold 0.075600
+41 Pose robot 0.989120 0.733190 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.097011
+range observations.sensors[3] 0.089587
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.680562
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.097011
+noised range sensors[3] 0.089587
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.680562 quantized destination 2 
+quantized inputs 0
+intensity 2.399865 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.097011
+right side sensor[3] 0.089587
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.098325
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.680562
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.621033 threshold 0.075600
+42 Pose robot 0.989120 0.763190 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.089063
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.653178
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.089063
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.653178 quantized destination 2 
+quantized inputs 0
+intensity 2.592813 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.089063
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.098633
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.653178
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.597054 threshold 0.075600
+43 Pose robot 0.989120 0.793190 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.099011
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.623571
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.099011
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.623571 quantized destination 2 
+quantized inputs 0
+intensity 2.805261 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.099011
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.099876
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.623571
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.573641 threshold 0.075600
+44 Pose robot 0.989120 0.823190 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.591517
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.591517 quantized destination 2 
+quantized inputs 0
+intensity 3.038918 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.591517
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.573641 threshold 0.075600
+45 Pose robot 0.989120 0.823190 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.093732
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.093732 quantized destination 3 
+quantized inputs 0
+intensity 3.038918 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.093732
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.543780 threshold 0.075600
+46 Pose robot 1.010333 0.844403 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.098895
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.098895 quantized destination 3 
+quantized inputs 0
+intensity 3.381838 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.098895
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.513936 threshold 0.075600
+47 Pose robot 1.031546 0.865616 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.104659
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.104659 quantized destination 3 
+quantized inputs 0
+intensity 3.786018 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.104659
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.484110 threshold 0.075600
+48 Pose robot 1.052760 0.886829 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.088529
+range observations.sensors[6] 0.085485
+range observations.sensors[7] 0.091612
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.111133
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.088529
+noised range sensors[6] 0.085485
+noised range sensors[7] 0.091612
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.111133 quantized destination 3 
+quantized inputs 0
+intensity 4.266896 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.088529
+right side sensor[6] 0.085485
+right side sensor[7] 0.091612
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.095703
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.111133
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.484110 threshold 0.075600
+49 Pose robot 1.052760 0.886829 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.085761
+range observations.sensors[4] 0.087354
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.608918
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.085761
+noised range sensors[4] 0.087354
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.608918 quantized destination 2 
+quantized inputs 0
+intensity 4.266896 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.085761
+right side sensor[4] 0.087354
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.096639
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.608918
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.461056 threshold 0.075600
+50 Pose robot 1.052759 0.916829 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.084883
+range observations.sensors[3] 0.078123
+range observations.sensors[4] 0.079574
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.568283
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.084883
+noised range sensors[3] 0.078123
+noised range sensors[4] 0.079574
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.568283 quantized destination 2 
+quantized inputs 0
+intensity 4.704284 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.084883
+right side sensor[3] 0.078123
+right side sensor[4] 0.079574
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.092822
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.568283
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.438842 threshold 0.075600
+51 Pose robot 1.052759 0.946829 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.093899
+range observations.sensors[2] 0.076583
+range observations.sensors[3] 0.078137
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.523454
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.093899
+noised range sensors[2] 0.076583
+noised range sensors[3] 0.078137
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.523454 quantized destination 2 
+quantized inputs 0
+intensity 5.192591 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.093899
+right side sensor[2] 0.076583
+right side sensor[3] 0.078137
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.093577
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.523454
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.417603 threshold 0.075600
+52 Pose robot 1.052759 0.976829 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.083723
+range observations.sensors[2] 0.083760
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.473957
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.083723
+noised range sensors[2] 0.083760
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.473957 quantized destination 2 
+quantized inputs 0
+intensity 5.734211 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.083723
+right side sensor[2] 0.083760
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.095935
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.473957
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.417603 threshold 0.075600
+53 Pose robot 1.052759 0.976829 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.098682
+range observations.sensors[4] 0.074564
+range observations.sensors[5] 0.098297
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.259357
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.098682
+noised range sensors[4] 0.074564
+noised range sensors[5] 0.098297
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.259357 quantized destination 2 
+quantized inputs 0
+intensity 5.734211 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.098682
+right side sensor[4] 0.074564
+right side sensor[5] 0.098297
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.096443
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 6.259357
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.387612 threshold 0.075600
+54 Pose robot 1.073972 0.998042 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.067854
+range observations.sensors[4] 0.077595
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.257513
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.067854
+noised range sensors[4] 0.077595
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.257513 quantized destination 2 
+quantized inputs 0
+intensity 6.655890 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.067854
+right side sensor[4] 0.077595
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.093181
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 6.257513
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.357622 threshold 0.075600
+55 Pose robot 1.095186 1.019256 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.068607
+range observations.sensors[3] 0.070504
+range observations.sensors[4] 0.088382
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.255359
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.068607
+noised range sensors[3] 0.070504
+noised range sensors[4] 0.088382
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.255359 quantized destination 2 
+quantized inputs 0
+intensity 7.818987 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.068607
+right side sensor[3] 0.070504
+right side sensor[4] 0.088382
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.090937
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 6.255359
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.327635 threshold 0.075600
+56 Pose robot 1.116399 1.040469 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.076623
+range observations.sensors[2] 0.071185
+range observations.sensors[3] 0.080923
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.252812
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.076623
+noised range sensors[2] 0.071185
+noised range sensors[3] 0.080923
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.252812 quantized destination 2 
+quantized inputs 0
+intensity 9.315782 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.076623
+right side sensor[2] 0.071185
+right side sensor[3] 0.080923
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.091091
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 6.252812
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.327635 threshold 0.075600
+57 Pose robot 1.116399 1.040469 0.000000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.082905
+range observations.sensors[4] 0.072896
+range observations.sensors[5] 0.074040
+range observations.sensors[6] 0.091702
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.755026
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.082905
+noised range sensors[4] 0.072896
+noised range sensors[5] 0.074040
+noised range sensors[6] 0.091702
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.755026 quantized destination 3 
+quantized inputs 0
+intensity 9.315782 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.082905
+right side sensor[4] 0.072896
+right side sensor[5] 0.074040
+right side sensor[6] 0.091702
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.090193
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.755026
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.306478 threshold 0.075600
+58 Pose robot 1.146399 1.040469 0.000000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.078910
+range observations.sensors[3] 0.060351
+range observations.sensors[4] 0.057264
+range observations.sensors[5] 0.062688
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.822159
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.078910
+noised range sensors[3] 0.060351
+noised range sensors[4] 0.057264
+noised range sensors[5] 0.062688
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.822159 quantized destination 3 
+quantized inputs 0
+intensity 10.646377 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.078910
+right side sensor[3] 0.060351
+right side sensor[4] 0.057264
+right side sensor[5] 0.062688
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.082402
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.822159
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.286902 threshold 0.075600
+59 Pose robot 1.176399 1.040469 0.000000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.083114
+range observations.sensors[2] 0.053257
+range observations.sensors[3] 0.047434
+range observations.sensors[4] 0.046894
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.898840
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.083114
+noised range sensors[2] 0.053257
+noised range sensors[3] 0.047434
+noised range sensors[4] 0.046894
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.898840 quantized destination 3 
+quantized inputs 0
+intensity 12.148809 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.083114
+right side sensor[2] 0.053257
+right side sensor[3] 0.047434
+right side sensor[4] 0.046894
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.078837
+Average left side 0.100000
+intensity 0 obstacles 1 dest 3
+Angle light 0.898840
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.269252 threshold 0.075600
+60 Pose robot 1.206399 1.040469 0.000000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.053226
+range observations.sensors[2] 0.041480
+range observations.sensors[3] 0.047625
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.986149
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.053226
+noised range sensors[2] 0.041480
+noised range sensors[3] 0.047625
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.986149 quantized destination 3 
+quantized inputs 0
+intensity 13.793767 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.053226
+right side sensor[2] 0.041480
+right side sensor[3] 0.047625
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.080291
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.986149
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.269252 threshold 0.075600
+61 Pose robot 1.206399 1.040469 0.785400 
+range observations.sensors[0] 0.038516
+range observations.sensors[1] 0.071069
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.200749
+noised range sensors[0] 0.038516
+noised range sensors[1] 0.071069
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.200749 quantized destination 3 
+quantized inputs 0
+intensity 13.793767 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.038516
+right side sensor[1] 0.071069
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.088698
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.200749
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.239929 threshold 0.075600
+62 Pose robot 1.227612 1.061682 0.785400 
+range observations.sensors[0] 0.088050
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.225684
+noised range sensors[0] 0.088050
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.225684 quantized destination 3 
+quantized inputs 0
+intensity 17.371418 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.088050
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.098506
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.225684
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.210796 threshold 0.075600
+63 Pose robot 1.248825 1.082896 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.257537
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.257537 quantized destination 3 
+quantized inputs 0
+intensity 22.504711 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.257537
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.181946 threshold 0.075600
+64 Pose robot 1.270038 1.104109 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.299545
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.299545 quantized destination 3 
+quantized inputs 0
+intensity 30.207413 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 3
+Angle light 0.299545
+LEFT
+Present State: 3 TURN LEFT
+Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
+movement without noise: angle  0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.181946 threshold 0.075600
+65 Pose robot 1.270038 1.104109 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.797330
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.797330 quantized destination 2 
+quantized inputs 0
+intensity 30.207413 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.797330
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.156048 threshold 0.075600
+66 Pose robot 1.270038 1.134109 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.707436
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.707436 quantized destination 2 
+quantized inputs 0
+intensity 41.066044 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.707436
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.131900 threshold 0.075600
+67 Pose robot 1.270038 1.164109 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.583282
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.583282 quantized destination 2 
+quantized inputs 0
+intensity 57.479252 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.583282
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.110653 threshold 0.075600
+68 Pose robot 1.270038 1.194109 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.407743
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 5.407743 quantized destination 2 
+quantized inputs 0
+intensity 81.671730 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 5.407743
+RIGHT
+Present State: 5 TURN RIGTH
+Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
+movement without noise: angle  -0.785400 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.110653 threshold 0.075600
+69 Pose robot 1.270038 1.194109 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.193143
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.193143 quantized destination 2 
+quantized inputs 0
+intensity 81.671730 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 6.193143
+FORWARD
+Present State: 0 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+distance destination 0.080820 threshold 0.075600
+70 Pose robot 1.291251 1.215322 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.159759
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.159759 quantized destination 2 
+quantized inputs 0
+intensity 153.096390 quantized intensity 0 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 0 obstacles 0 dest 2
+Angle light 6.159759
+FORWARD
+Present State: 1 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
+
+
+ ************************************************************
+ reached distance destination 0.051181
+distance destination 0.051181 threshold 0.075600
+71 Pose robot 1.312464 1.236535 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.087532
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.087532 quantized destination 2 
+quantized inputs 0
+intensity 381.747345 quantized intensity 1 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+intensity 1 obstacles 0 dest 2
+Angle light 6.087532
+FORWARD
+Present State: 13 FORWARD
+Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
+movement without noise: angle  0.000000 distance 0.030000
