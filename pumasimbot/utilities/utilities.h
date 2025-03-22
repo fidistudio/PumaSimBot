@@ -1776,6 +1776,14 @@ coord ProyectarCoordDestinoEnCarrito(coord PosicionCarrito,coord CoordDestino){
         return CoordTransformado; 
 }
 
+coord ObtenerCoordenadasDeObstaculo(float Magnitud, float Angulo){
+        coord CoordenadasObstaculo; 
+        CoordenadasObstaculo.xc = Magnitud * cos(Angulo); 
+        CoordenadasObstaculo.yc = Magnitud * sin(Angulo); 
+
+        return CoordenadasObstaculo;
+}
+
 
 
 coord CalcularCampoAtractivo(coord CoordActual, coord CoordDestino, float d1, float epsilon1, float epsilon2){
@@ -1789,8 +1797,8 @@ coord CalcularCampoAtractivo(coord CoordActual, coord CoordDestino, float d1, fl
         }
 }
 
-coord CalcularCampoRepulsivo(coord CoordActual, coord CoordDestino, float eta, float d0){
-        coord Resta = dif_vectors(CoordActual, CoordDestino);
+coord CalcularCampoRepulsivo(coord CoordActual, coord CoordObstaculo, float eta, float d0){
+        coord Resta = dif_vectors(CoordActual, CoordObstaculo);
         float Modulo = magnitude(Resta); 
         float constante = -eta*((1/Modulo)-(1/d0))*(1/pow(Modulo, 3));
 

@@ -42,6 +42,7 @@
 #include <time.h>
 #include <sys/time.h>
 #include <unistd.h>
+#include <vector>
 
 // Robotics include files
 #include "../utilities/constants.h"
@@ -327,7 +328,7 @@ int go_to(Inputs inputs)
                 // It calculates the robot's movement using an state machine created by an student
                 state=next_state;
                 // state_machine_students in ../state_machines/state_machine_student.h
-                DistTheta = state_machine_students(observations, quantized_attraction, quantized_intensity,state,&next_state,inputs.Mag_Advance,inputs.max_angle, inputs.num_sensors,angle_light);
+                DistTheta = state_machine_students(observations, coord_dest, coord_robot,state,&next_state,inputs.Mag_Advance,inputs.max_angle, inputs.num_sensors);
 
 #ifdef DEBUG
                 printf("Student FSM behavior avoidance destination: angle  %f distance %f\n",DistTheta.angle,DistTheta.distance);

@@ -9,6 +9,7 @@
  *                                                      *
  ********************************************************/
 
+ 
 
 // Student State Machine 
 AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float Mag_Advance, float max_angle, int num_sensors){
@@ -108,7 +109,7 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
        
        
        // Student State Machine 
-       AdvanceAngle state_machine_students(Raw observations, int dest, int intensity, int state, int *next_state, float Mag_Advance, float max_angle, int num_sensors, float angle_light){
+       AdvanceAngle state_machine_students(Raw observations, coord Dest, coord Position, int state, int *next_state, float Mag_Advance, float max_angle, int num_sensors){
        
         AdvanceAngle gen_vector;
         int obs;
@@ -116,6 +117,21 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         float left_side=0;
         float right_side=0;
         int value = 0;
+        float Tolerance = 0.5;
+        coord PosicionActual = dif_vectors(Position, Position);
+        float origen_angle = -2.3561; 
+        float range_angle = 4.7122;
+        float delta_angle = range_angle/num_sensors; 
+        float Paso =0; 
+        float Angulo = 0;
+
+        //Constantes de campos potenciales 
+        float d0 = 5;
+        float epsilon1 = 1; 
+        float epsilon2 = 1; 
+        float eta = 0.5; 
+        float delta0 = 0.5;
+        float d1 = 5; 
        
         printf("\n\n **************** Student State Machine *********************\n");
        
@@ -141,174 +157,86 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         else value = (value << 1) + 0;
        
         obs = value;
-        printf("intensity %d obstacles %d dest %d\n",intensity,obs,dest);
-        printf("Angle light %f\n",angle_light);
-       
+
         switch ( state ) {
        
                case 0:
-                       if (intensity == 1){
-                               gen_vector=generate_output(STOP,Mag_Advance,max_angle);
-                               *next_state = 1;
-       
-                               printf("Present State: %d STOP\n", state);
-                               printf("\n **************** Reached light source ******************************\n");
-                       }
-                       else{
-       
-                               gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
-                               *next_state = 1;
-       
-                               printf("Present State: %d FORWARD\n", state);
+                       if (magnitude(dif_vectors(Position, Dest)) <= Tolerance){
+                                gen_vector = generate_output(STOP, Mag_Advance, max_angle); 
+                                printf("STOP\n");
+                                printf("\n **************** Destination Close Enough ******************************\n");
+                       }else{
+                        *next_state = 1;
                        }
        
                        break;
-       
-               case 1:
-                       if (obs == 0){
-                               // There is not obstacle
-                               gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
-                               *next_state = 13;
-       
-                               printf("Present State: %d FORWARD\n", state);
+
+                case 1://Transformar las coordenadas del destino al sistema móvil del carrito
+                       coord DestinoTransformado; 
+                       DestinoTransformado = ProyectarCoordDestinoEnCarrito(Position, Dest); 
+                       printf("Las coordenadas del destino proyectadas al sistema del carrito son: x = %f, y = %f", DestinoTransformado.xc, DestinoTransformado.yc);
+
+                       *next_state = 2; 
+                       break;
+
+                case 2: //Calcular el campo atractivo
+                       coord CampoAtractivo; 
+                       CampoAtractivo = CalcularCampoAtractivo(PosicionActual, DestinoTransformado, d1, epsilon1, epsilon2);
+                       printf("Las coordenadas del campo atractivo son: Xatractivo = %f; Yatractivo = %f, tomando en cuenta el destino Xdestino = %f; Ydestino = %f y de Posición Inicial XInicial = %f; Yinicial = %f", CampoAtractivo.xc, CampoAtractivo.yc, DestinoTransformado.xc, DestinoTransformado.yc, PosicionActual.xc, PosicionActual.yc);
+
+                       *next_state = 3; 
+                       break;
+
+                case 3: //Calcular campos repulsivos
+                        std::vector<coord> CamposRepulsivos(num_sensors);
+
+                       for ( int i = 0; i<num_sensors; i++){
+                        float sensor_angle = origen_angle + i * delta_angle; 
+
+                        if(observations.sensors[i]<THRS_SENSOR){
+                                CamposRepulsivos[i] = CalcularCampoRepulsivo(PosicionActual, ObtenerCoordenadasDeObstaculo(observations.sensors[i], sensor_angle), eta, d0); 
+                        }else{
+                                CamposRepulsivos[i] = coord {0, 0, 0}; 
+                        }
+
+                        printf("Campo repulsivo[%d]: X = %f, Y = %f\n", i, CamposRepulsivos[i].xc, CamposRepulsivos[i].yc);                        
                        }
-                       else{
-                               gen_vector=generate_output(STOP,Mag_Advance,max_angle);
-                               printf("Present State: %d STOP\n", state);
-       
-                               if (obs == 1){
-                                       // obtacle in the  right
-                                       *next_state = 2;
-                               }
-                               else if (obs == 2){
-                                       // obtacle in the left
-                                       *next_state = 4;
-                               }
-                               else if (obs == 3){
-                                       // obstacle in the front
-                                       *next_state = 6;
-                               }
+
+                       *next_state = 4; 
+                       break;
+
+                case 4: //Calcular campo potencial 
+                       coord CampoPotencial; 
+                       CampoPotencial = CalcularCamporPotencial(CampoAtractivo, CamposRepulsivos, num_sensors); 
+                       printf("Las coordenadas del campo potencial son XPotencial=%f, YPotencial=%f", CampoPotencial.xc, CampoPotencial.yc);
+
+                       *next_state = 5; 
+                       break;
+
+                case 5: //Calcular y avanzar a siguiente coordenada
+                       coord PosicionNueva; 
+                       PosicionNueva = CalcularNuevaPosicion(CampoPotencial, delta0); 
+                       printf("La nueva coordenada respecto al carrito es: Xcarrito=%f, Ycarrito = %f", PosicionNueva.xc, PosicionNueva.yc);
+
+                       PosicionNueva.anglec = atan2(PosicionNueva.yc, PosicionNueva.xc);
+                       Paso = magnitude(PosicionNueva);
+
+                       if(Position.anglec-PosicionNueva.anglec < 0){//Girar a la derecha
+                                gen_vector = generate_output(RIGHTADVANCE, Paso, abs(Position.anglec-PosicionNueva.anglec)); 
+                                printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
+                                printf("Avanzando: %f metros", Paso); 
+                       }else{
+                                gen_vector = generate_output(LEFTADVANCE, Paso, abs(Position.anglec-PosicionNueva.anglec)); 
+                                printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
+                                printf("Avanzando: %f metros", Paso);
                        }
-       
-                       break;
-       
-               case 2: // Backward, obstacle in the right
-                       gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
-                       *next_state = 3;
-       
-                       printf("Present State: %d BACKWARD, obstacle right\n", state);
-                       break;
-       
-               case 3: // right turn
-                       gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-                       *next_state = 0;
-       
-                       printf("Present State: %d TURN LEFT\n", state);
-                       break;
-       
-               case 4: // Backward, obstacle in the left
-                       gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
-                       *next_state = 5;
-       
-                       printf("Present State: %d BACKWARD, obstacle left\n", state);
-                       break;
-       
-               case 5: // left turn
-                       gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
-                       *next_state = 0;
-       
-                       printf("Present State: %d TURN RIGTH\n", state);
-                       break;
-       
-               case 6: // Backward, obstacle in front
-                       gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
-                       *next_state = 7;
-       
-                       printf("Present State: %d BACKWARD, obstacle FRONT\n", state);
-                       break;
-       
-               case 7: /// Left turn
-                       gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-                       *next_state = 8;
-       
-                       printf("Present State: %d TURN 1 LEFT\n", state);
-                       break;
-       
-               case 8:// Left turn
-                       gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-                       *next_state = 9;
-       
-                       printf("Present State: %d TURN 2 LEFT\n", state);
-                       break;
-       
-               case 9: // Forward
-                       gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
-                       *next_state = 10;
-       
-                       printf("Present State: %d 1 FORWARD\n", state);
-                       break;
-       
-               case 10: // Forward
-                       gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
-                       *next_state = 11;
-       
-                       printf("Present State: %d 2 FORWARD\n", state);
-                       break;
-       
-               case 11: // Right turn
-                       gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
-                       *next_state = 12;
-       
-                       printf("Present State: %d turn 1 RIGHT\n", state);
-                       break;
-       
-               case 12: // Right turn
-                       gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
-                       *next_state = 0;
-       
-                       printf("Present State: %d turn 2 RIGHT\n", state);
-                       break;
-       
-       
-               case 13: // // check destination
-                        if (dest == 0){
-                                       // go right
-                                       gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
-                                       *next_state = 5;
-       
-                                       printf("Present State: %d RIGHT\n", state);
-                        }
-                        else if (dest == 1){
-                                       // go left
-                                       gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-                                       *next_state = 3;
-       
-                                       printf("Present State: %d LEFT\n", state);
-                        }
-                        else if (dest == 2){
-                                       // go right single
-                                       gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
-                                       *next_state = 5;
-       
-                                       printf("Present State: %d FORWARD\n", state);
-                        }
-                        else if (dest == 3){
-                                       // go left single
-                                       gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
-                                       *next_state = 3;
-       
-                                       printf("Present State: %d FORWARD\n", state);
-                        }
-                       break;
-       
-               default:
-                       printf("State %d not defined used ", state);
-                       gen_vector=generate_output(STOP,Mag_Advance,max_angle);
-                       next_state = 0;
-                       break;
-       
-                       
+
+                       *next_state = 0; 
+                       break; 
+
         }
+       
+
        
         return gen_vector;
        
