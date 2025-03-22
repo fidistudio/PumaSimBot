@@ -83,6 +83,12 @@ coord dif_vectors(coord vector1,coord vector2){
         return(dif);
 }
 
+coord sum_vectors(coord vector1, coord vector2){
+        coord sum; 
+        sum.xc = vector1.xc + vector2.xc;
+        sum.yc = vector1.yc + vector2.yc;
+}
+
 // This function is used to calculate the rotation angle for the Mvto command
 float get_angle(float ang,float c,float d,float X,float Y){
         float x,y;
@@ -341,6 +347,15 @@ coord divide_vector_scalar(coord vector1,float cnt){
         div.xc=vector1.xc/cnt;
         div.yc=vector1.yc/cnt;
         return(div);
+}
+
+coord multily_vector_scalar(coord vector1,float cnt){
+
+        coord mult;
+
+        mult.xc=vector1.xc*cnt;
+        mult.yc=vector1.yc*cnt;
+        return(mult);
 }
 
 
@@ -1725,3 +1740,76 @@ int write_vq_obs_sensor(FILE *fpw, int index, char *sensor, int num_sensors, flo
 }
 
 */
+
+/****************************Métodos de Jorge F. Martínez R. *******************************/
+
+void MultiplicarMatrices(float* A, int filasA, int columnasA, float* B, int filasB, int columnasB, float* result){
+        if (columnasA != filasB){
+                printf("Las matrices no se pueden multiplicar: dimensiones incompatibles.");
+                return; 
+        }
+        for (int i = 0; i < filasA; i++){
+                for (int j = 0; j<columnasB; j++){
+                        result[i * columnasB + j] = 0; 
+                        for (int k = 0; k< columnasA; k++){
+                                result[i * columnasB + j] += A[i * columnasA + k] * B[k * columnasB + j]; 
+                        }
+                }
+        }
+}
+
+
+coord ProyectarCoordDestinoEnCarrito(coord PosicionCarrito,coord CoordDestino){
+        //Extraer los valores de la posición y orientación del carrito
+        float theta = PosicionCarrito.anglec;
+        float cosTheta = cos(theta); 
+        float sinTheta = sin(theta); 
+        float PosicionInicialX = PosicionCarrito.xc;
+        float PosicionInicialY = PosicionCarrito.yc;
+        
+        //Construcción de las coordenadas del destino proyectadas al sistema de referencia del carrito
+        coord CoordTransformado;
+        CoordTransformado.xc = cosTheta * (CoordDestino.xc - PosicionInicialX) + sinTheta * (CoordDestino.yc - PosicionInicialY);
+        CoordTransformado.yc = -sinTheta * (CoordDestino.xc - PosicionInicialX) + cosTheta * (CoordDestino.yc - PosicionInicialY);
+        CoordTransformado.anglec = CoordDestino.anglec - theta; // Ajuste del ángulo relativo
+
+        return CoordTransformado; 
+}
+
+
+
+coord CalcularCampoAtractivo(coord CoordActual, coord CoordDestino, float d1, float epsilon1, float epsilon2){
+        coord Resta = dif_vectors(CoordActual, CoordDestino);
+        float Modulo = magnitude(Resta); 
+
+        if (Modulo <= d1){
+                return  multily_vector_scalar(Resta, epsilon1) ;
+        }else{
+                return divide_vector_scalar(multily_vector_scalar(Resta, epsilon2), Modulo); 
+        }
+}
+
+coord CalcularCampoRepulsivo(coord CoordActual, coord CoordDestino, float eta, float d0){
+        coord Resta = dif_vectors(CoordActual, CoordDestino);
+        float Modulo = magnitude(Resta); 
+        float constante = -eta*((1/Modulo)-(1/d0))*(1/pow(Modulo, 3));
+
+        return multily_vector_scalar(Resta, constante); 
+}
+
+coord CalcularCamporPotencial(coord CampoAtractivo, coord CampoRepulsivo[], int NumeroCamposRepulsivos){
+        coord CampoPotencial = CampoAtractivo; 
+        //Sumando los campos repulsivos
+        for (int i = 0; i<NumeroCamposRepulsivos; i++){
+                CampoPotencial = sum_vectors(CampoPotencial, CampoRepulsivo[i]);
+        } 
+        return CampoPotencial; 
+}
+
+
+coord CalcularNuevaPosicion(coord CampoPotencial, float delta0){
+        float Modulo = magnitude(CampoPotencial); 
+        float constante = delta0/Modulo;
+        coord NuevaPosicion = multily_vector_scalar(CampoPotencial, -constante); 
+        return NuevaPosicion; 
+}
