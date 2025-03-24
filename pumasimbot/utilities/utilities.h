@@ -349,7 +349,7 @@ coord divide_vector_scalar(coord vector1,float cnt){
         return(div);
 }
 
-coord multily_vector_scalar(coord vector1,float cnt){
+coord multiply_vector_scalar(coord vector1,float cnt){
 
         coord mult;
 
@@ -1771,7 +1771,6 @@ coord ProyectarCoordDestinoEnCarrito(coord PosicionCarrito,coord CoordDestino){
         coord CoordTransformado;
         CoordTransformado.xc = cosTheta * (CoordDestino.xc - PosicionInicialX) + sinTheta * (CoordDestino.yc - PosicionInicialY);
         CoordTransformado.yc = -sinTheta * (CoordDestino.xc - PosicionInicialX) + cosTheta * (CoordDestino.yc - PosicionInicialY);
-        CoordTransformado.anglec = CoordDestino.anglec - theta; // Ajuste del ángulo relativo
 
         return CoordTransformado; 
 }
@@ -1791,9 +1790,9 @@ coord CalcularCampoAtractivo(coord CoordActual, coord CoordDestino, float d1, fl
         float Modulo = magnitude(Resta); 
 
         if (Modulo <= d1){
-                return  multily_vector_scalar(Resta, epsilon1) ;
+                return  multiply_vector_scalar(Resta, epsilon1) ;
         }else{
-                return divide_vector_scalar(multily_vector_scalar(Resta, epsilon2), Modulo); 
+                return divide_vector_scalar(multiply_vector_scalar(Resta, epsilon2), Modulo); 
         }
 }
 
@@ -1802,7 +1801,7 @@ coord CalcularCampoRepulsivo(coord CoordActual, coord CoordObstaculo, float eta,
         float Modulo = magnitude(Resta); 
         float constante = -eta*((1/Modulo)-(1/d0))*(1/pow(Modulo, 3));
 
-        return multily_vector_scalar(Resta, constante); 
+        return multiply_vector_scalar(Resta, constante); 
 }
 
 coord CalcularCamporPotencial(coord CampoAtractivo, coord CampoRepulsivo[], int NumeroCamposRepulsivos){
@@ -1818,6 +1817,6 @@ coord CalcularCamporPotencial(coord CampoAtractivo, coord CampoRepulsivo[], int 
 coord CalcularNuevaPosicion(coord CampoPotencial, float delta0){
         float Modulo = magnitude(CampoPotencial); 
         float constante = delta0/Modulo;
-        coord NuevaPosicion = multily_vector_scalar(CampoPotencial, -constante); 
+        coord NuevaPosicion = multiply_vector_scalar(CampoPotencial, -constante); 
         return NuevaPosicion; 
 }

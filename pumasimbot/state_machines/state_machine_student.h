@@ -117,13 +117,14 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         float left_side=0;
         float right_side=0;
         int value = 0;
+
         float Tolerance = 0.5;
         coord PosicionActual = dif_vectors(Position, Position);
         float origen_angle = -2.3561; 
         float range_angle = 4.7122;
         float delta_angle = range_angle/num_sensors; 
-        float Paso =0; 
-        float Angulo = 0;
+        float SiguientePaso =0; 
+        float SiguienteAngulo = 0;
 
         //Constantes de campos potenciales 
         float d0 = 5;
@@ -158,83 +159,68 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
        
         obs = value;
 
-        switch ( state ) {
+       if (magnitude(dif_vectors(Position, Dest)) <= Tolerance){
+              gen_vector = generate_output(STOP, Mag_Advance, max_angle); 
+              printf("STOP\n");
+              printf("\n **************** Destination Close Enough ******************************\n");
+              }else{
+
+              
        
-               case 0:
-                       if (magnitude(dif_vectors(Position, Dest)) <= Tolerance){
-                                gen_vector = generate_output(STOP, Mag_Advance, max_angle); 
-                                printf("STOP\n");
-                                printf("\n **************** Destination Close Enough ******************************\n");
+
+       //Transformar las coordenadas del destino al sistema móvil del carrito
+              coord DestinoTransformado; 
+              DestinoTransformado = ProyectarCoordDestinoEnCarrito(Position, Dest); 
+              printf("Las coordenadas del destino proyectadas al sistema del carrito son: x = %f, y = %f", DestinoTransformado.xc, DestinoTransformado.yc);
+
+       //Calcular el campo atractivo
+              coord CampoAtractivo; 
+              CampoAtractivo = CalcularCampoAtractivo(PosicionActual, DestinoTransformado, d1, epsilon1, epsilon2);
+              printf("Las coordenadas del campo atractivo son: Xatractivo = %f; Yatractivo = %f, tomando en cuenta el destino Xdestino = %f; Ydestino = %f y de Posición Inicial XInicial = %f; Yinicial = %f", CampoAtractivo.xc, CampoAtractivo.yc, DestinoTransformado.xc, DestinoTransformado.yc, PosicionActual.xc, PosicionActual.yc);
+
+              coord CamposRepulsivos[num_sensors];
+
+              for ( int i = 0; i<num_sensors; i++){
+              float sensor_angle = origen_angle + i * delta_angle; 
+
+              if(observations.sensors[i]<THRS_SENSOR){
+
+                     CamposRepulsivos[i] = CalcularCampoRepulsivo(PosicionActual, ObtenerCoordenadasDeObstaculo(observations.sensors[i], sensor_angle), eta, d0); 
+
+              }else{
+
+                     CamposRepulsivos[i] = coord {0, 0, 0};
+
+              }
+
+                     printf("Campo repulsivo[%d]: X = %f, Y = %f\n", i, CamposRepulsivos[i].xc, CamposRepulsivos[i].yc);                        
+              }
+
+       //Calcular campo potencial 
+              coord CampoPotencial; 
+              CampoPotencial = CalcularCamporPotencial(CampoAtractivo, CamposRepulsivos, num_sensors); 
+              printf("Las coordenadas del campo potencial son XPotencial=%f, YPotencial=%f", CampoPotencial.xc, CampoPotencial.yc);
+
+       //Calcular y avanzar a siguiente coordenada
+              coord PosicionNueva; 
+              PosicionNueva = CalcularNuevaPosicion(CampoPotencial, delta0); 
+              printf("La nueva coordenada respecto al carrito es: Xcarrito=%f, Ycarrito = %f", PosicionNueva.xc, PosicionNueva.yc);
+
+              PosicionNueva.anglec = atan2(PosicionNueva.yc, PosicionNueva.xc);
+              SiguientePaso = magnitude(PosicionNueva);
+
+              if(Position.anglec-PosicionNueva.anglec < 0){//Girar a la derecha
+                     gen_vector = generate_output(RIGHTADVANCE, SiguientePaso, abs(Position.anglec-PosicionNueva.anglec)); 
+                     printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
+                                printf("Avanzando: %f metros", SiguientePaso); 
                        }else{
-                        *next_state = 1;
-                       }
-       
-                       break;
-
-                case 1://Transformar las coordenadas del destino al sistema móvil del carrito
-                       coord DestinoTransformado; 
-                       DestinoTransformado = ProyectarCoordDestinoEnCarrito(Position, Dest); 
-                       printf("Las coordenadas del destino proyectadas al sistema del carrito son: x = %f, y = %f", DestinoTransformado.xc, DestinoTransformado.yc);
-
-                       *next_state = 2; 
-                       break;
-
-                case 2: //Calcular el campo atractivo
-                       coord CampoAtractivo; 
-                       CampoAtractivo = CalcularCampoAtractivo(PosicionActual, DestinoTransformado, d1, epsilon1, epsilon2);
-                       printf("Las coordenadas del campo atractivo son: Xatractivo = %f; Yatractivo = %f, tomando en cuenta el destino Xdestino = %f; Ydestino = %f y de Posición Inicial XInicial = %f; Yinicial = %f", CampoAtractivo.xc, CampoAtractivo.yc, DestinoTransformado.xc, DestinoTransformado.yc, PosicionActual.xc, PosicionActual.yc);
-
-                       *next_state = 3; 
-                       break;
-
-                case 3: //Calcular campos repulsivos
-                        std::vector<coord> CamposRepulsivos(num_sensors);
-
-                       for ( int i = 0; i<num_sensors; i++){
-                        float sensor_angle = origen_angle + i * delta_angle; 
-
-                        if(observations.sensors[i]<THRS_SENSOR){
-                                CamposRepulsivos[i] = CalcularCampoRepulsivo(PosicionActual, ObtenerCoordenadasDeObstaculo(observations.sensors[i], sensor_angle), eta, d0); 
-                        }else{
-                                CamposRepulsivos[i] = coord {0, 0, 0}; 
-                        }
-
-                        printf("Campo repulsivo[%d]: X = %f, Y = %f\n", i, CamposRepulsivos[i].xc, CamposRepulsivos[i].yc);                        
-                       }
-
-                       *next_state = 4; 
-                       break;
-
-                case 4: //Calcular campo potencial 
-                       coord CampoPotencial; 
-                       CampoPotencial = CalcularCamporPotencial(CampoAtractivo, CamposRepulsivos, num_sensors); 
-                       printf("Las coordenadas del campo potencial son XPotencial=%f, YPotencial=%f", CampoPotencial.xc, CampoPotencial.yc);
-
-                       *next_state = 5; 
-                       break;
-
-                case 5: //Calcular y avanzar a siguiente coordenada
-                       coord PosicionNueva; 
-                       PosicionNueva = CalcularNuevaPosicion(CampoPotencial, delta0); 
-                       printf("La nueva coordenada respecto al carrito es: Xcarrito=%f, Ycarrito = %f", PosicionNueva.xc, PosicionNueva.yc);
-
-                       PosicionNueva.anglec = atan2(PosicionNueva.yc, PosicionNueva.xc);
-                       Paso = magnitude(PosicionNueva);
-
-                       if(Position.anglec-PosicionNueva.anglec < 0){//Girar a la derecha
-                                gen_vector = generate_output(RIGHTADVANCE, Paso, abs(Position.anglec-PosicionNueva.anglec)); 
+                                gen_vector = generate_output(LEFTADVANCE, SiguientePaso, abs(Position.anglec-PosicionNueva.anglec)); 
                                 printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
-                                printf("Avanzando: %f metros", Paso); 
-                       }else{
-                                gen_vector = generate_output(LEFTADVANCE, Paso, abs(Position.anglec-PosicionNueva.anglec)); 
-                                printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
-                                printf("Avanzando: %f metros", Paso);
+                                printf("Avanzando: %f metros", SiguientePaso);
                        }
 
-                       *next_state = 0; 
-                       break; 
 
-        }
+       }
        
 
        
