@@ -1725,3 +1725,28 @@ int write_vq_obs_sensor(FILE *fpw, int index, char *sensor, int num_sensors, flo
 }
 
 */
+
+
+/***************Jorge F. Martínez R. *******************/
+
+int proximidad(float left_side, float right_side)
+{
+        int value = 0;
+        if (left_side < (THRS) * 0.9)
+        {
+                value += 1;
+                if (left_side < (THRS) * 0.5)
+                {
+                        value += 3;
+                }
+        }
+        if (right_side < (THRS) * 0.9)
+        {
+                value += 2;
+                if (right_side < (THRS) * 0.5)
+                {
+                        value += 3;
+                }
+        }
+        return value; 
+}
