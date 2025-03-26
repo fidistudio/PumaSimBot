@@ -9,6 +9,8 @@
         "vector": "cpp",
         "iterator": "cpp",
         "string_view": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp"
     }
 }

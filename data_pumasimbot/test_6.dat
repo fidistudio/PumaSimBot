@@ -1,698 +1,16 @@
-../motion_planner/GoTo_State_Machine -x 0.787355 -y 0.032728 -a 5.497800 -v 0.732500 -z 0.435000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.030000 -MaxAngle 0.785400 -selection 6 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 1
+../motion_planner/GoTo_State_Machine -x 0.170000 -y 0.160000 -a 0.000000 -v 0.590000 -z 0.120000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.030000 -MaxAngle 0.785400 -selection 6 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 1
 
 observations file: ../../data_pumasimbot/obstacle.raw
 
  Radio robot 0.020000 
-( origen 0.787355 0.032728 5.497800 )
-( destination 0.732500 0.435000 )
+( origen 0.170000 0.160000 0.000000 )
+( destination 0.590000 0.120000 )
 search method 1
 
 
  ************************************************************
-distance destination 0.405995 threshold 0.075600
-1 Pose robot 0.787355 0.032728 5.497800 
-range observations.sensors[0] 0.100000
-range observations.sensors[1] 0.073505
-range observations.sensors[2] 0.038650
-range observations.sensors[3] 0.028082
-range observations.sensors[4] 0.023889
-range observations.sensors[5] 0.022962
-range observations.sensors[6] 0.023889
-range observations.sensors[7] 0.028084
-range observations.sensors[8] 0.038654
-range observations.sensors[9] 0.073520
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 2.491709
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.073505
-noised range sensors[2] 0.038650
-noised range sensors[3] 0.028082
-noised range sensors[4] 0.023889
-noised range sensors[5] 0.022962
-noised range sensors[6] 0.023889
-noised range sensors[7] 0.028084
-noised range sensors[8] 0.038654
-noised range sensors[9] 0.073520
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 2.491709 quantized destination 1 
-quantized inputs 1
-intensity 6.066789 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.073505
-right side sensor[2] 0.038650
-right side sensor[3] 0.028082
-right side sensor[4] 0.023889
-right side sensor[5] 0.022962
-right side sensor[6] 0.023889
-right side sensor[7] 0.028084
-left side sensor[8] 0.038654
-left side sensor[9] 0.073520
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.042383
-Average left side 0.089022
-intensity 0 obstacles 1 dest 1
-Angle light 2.491709
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
-
-
- ************************************************************
-distance destination 0.430263 threshold 0.075600
-2 Pose robot 0.808568 0.011515 5.497800 
-range observations.sensors[0] 0.100000
-range observations.sensors[1] 0.004875
-range observations.sensors[2] 0.002564
-range observations.sensors[3] 0.001863
-range observations.sensors[4] 0.001584
-range observations.sensors[5] 0.001749
-range observations.sensors[6] 0.001585
-range observations.sensors[7] 0.001863
-range observations.sensors[8] 0.002564
-range observations.sensors[9] 0.004876
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 2.533912
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.004875
-noised range sensors[2] 0.002564
-noised range sensors[3] 0.001863
-noised range sensors[4] 0.001584
-noised range sensors[5] 0.001749
-noised range sensors[6] 0.001585
-noised range sensors[7] 0.001863
-noised range sensors[8] 0.002564
-noised range sensors[9] 0.004876
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 2.533912 quantized destination 1 
-quantized inputs 1
-intensity 5.401730 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.004875
-right side sensor[2] 0.002564
-right side sensor[3] 0.001863
-right side sensor[4] 0.001584
-right side sensor[5] 0.001749
-right side sensor[6] 0.001585
-right side sensor[7] 0.001863
-left side sensor[8] 0.002564
-left side sensor[9] 0.004876
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.014510
-Average left side 0.075930
-intensity 0 obstacles 3 dest 1
-Angle light 2.533912
-RIGHT
-Present State: 5 TURNING RIGHT, OBSTACLE RIGHT
-Student FSM behavior avoidance destination: angle  -0.785400 distance 0.000000
-movement without noise: angle  -0.785400 distance 0.000000
-
-
- ************************************************************
-distance destination 0.430263 threshold 0.075600
-3 Pose robot 0.808568 0.011515 4.712400 
-range observations.sensors[0] 0.100000
-range observations.sensors[1] 0.100000
-range observations.sensors[2] 0.100000
-range observations.sensors[3] 0.009630
-range observations.sensors[4] 0.003319
-range observations.sensors[5] 0.002131
-range observations.sensors[6] 0.001691
-range observations.sensors[7] 0.001526
-range observations.sensors[8] 0.001526
-range observations.sensors[9] 0.001691
-range observations.sensors[10] 0.002131
-range observations.sensors[11] 0.003319
-range observations.sensors[12] 0.009630
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 3.319312
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.100000
-noised range sensors[2] 0.100000
-noised range sensors[3] 0.009630
-noised range sensors[4] 0.003319
-noised range sensors[5] 0.002131
-noised range sensors[6] 0.001691
-noised range sensors[7] 0.001526
-noised range sensors[8] 0.001526
-noised range sensors[9] 0.001691
-noised range sensors[10] 0.002131
-noised range sensors[11] 0.003319
-noised range sensors[12] 0.009630
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 3.319312 quantized destination 0 
-quantized inputs 3
-intensity 5.401730 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.100000
-right side sensor[2] 0.100000
-right side sensor[3] 0.009630
-right side sensor[4] 0.003319
-right side sensor[5] 0.002131
-right side sensor[6] 0.001691
-right side sensor[7] 0.001526
-left side sensor[8] 0.001526
-left side sensor[9] 0.001691
-left side sensor[10] 0.002131
-left side sensor[11] 0.003319
-left side sensor[12] 0.009630
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.039787
-Average left side 0.039787
-intensity 0 obstacles 3 dest 0
-Angle light 3.319312
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
-robot inside polygon 1 x:0.809, y:-0.018,  rad:4.712 polygon  5 polygon name wall2
-The robot remains with the previous position
-
-
- ************************************************************
-distance destination 0.430263 threshold 0.075600
-4 Pose robot 0.808568 0.011515 4.712400 
-range observations.sensors[0] 0.100000
-range observations.sensors[1] 0.100000
-range observations.sensors[2] 0.100000
-range observations.sensors[3] 0.009630
-range observations.sensors[4] 0.003319
-range observations.sensors[5] 0.002131
-range observations.sensors[6] 0.001691
-range observations.sensors[7] 0.001526
-range observations.sensors[8] 0.001526
-range observations.sensors[9] 0.001691
-range observations.sensors[10] 0.002131
-range observations.sensors[11] 0.003319
-range observations.sensors[12] 0.009630
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 3.319312
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.100000
-noised range sensors[2] 0.100000
-noised range sensors[3] 0.009630
-noised range sensors[4] 0.003319
-noised range sensors[5] 0.002131
-noised range sensors[6] 0.001691
-noised range sensors[7] 0.001526
-noised range sensors[8] 0.001526
-noised range sensors[9] 0.001691
-noised range sensors[10] 0.002131
-noised range sensors[11] 0.003319
-noised range sensors[12] 0.009630
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 3.319312 quantized destination 0 
-quantized inputs 3
-intensity 5.401730 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.100000
-right side sensor[2] 0.100000
-right side sensor[3] 0.009630
-right side sensor[4] 0.003319
-right side sensor[5] 0.002131
-right side sensor[6] 0.001691
-right side sensor[7] 0.001526
-left side sensor[8] 0.001526
-left side sensor[9] 0.001691
-left side sensor[10] 0.002131
-left side sensor[11] 0.003319
-left side sensor[12] 0.009630
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.039787
-Average left side 0.039787
-intensity 0 obstacles 3 dest 0
-Angle light 3.319312
-LEFT_ADVANCE TWICE
-Present State: 1 OBSTACLE IN FRONT
-Student FSM behavior avoidance destination: angle  1.570800 distance 0.030000
-movement without noise: angle  1.570800 distance 0.030000
-
-
- ************************************************************
-distance destination 0.436566 threshold 0.075600
-5 Pose robot 0.838568 0.011516 6.283200 
-range observations.sensors[0] 0.002131
-range observations.sensors[1] 0.001691
-range observations.sensors[2] 0.001526
-range observations.sensors[3] 0.001525
-range observations.sensors[4] 0.001691
-range observations.sensors[5] 0.002131
-range observations.sensors[6] 0.003320
-range observations.sensors[7] 0.009635
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 1.816199
-noised range sensors[0] 0.002131
-noised range sensors[1] 0.001691
-noised range sensors[2] 0.001526
-noised range sensors[3] 0.001525
-noised range sensors[4] 0.001691
-noised range sensors[5] 0.002131
-noised range sensors[6] 0.003320
-noised range sensors[7] 0.009635
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 1.816199 quantized destination 1 
-quantized inputs 1
-intensity 5.246875 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.002131
-right side sensor[1] 0.001691
-right side sensor[2] 0.001526
-right side sensor[3] 0.001525
-right side sensor[4] 0.001691
-right side sensor[5] 0.002131
-right side sensor[6] 0.003320
-right side sensor[7] 0.009635
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.002956
-Average left side 0.100000
-intensity 0 obstacles 1 dest 1
-Angle light 1.816199
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
-
-
- ************************************************************
-distance destination 0.444807 threshold 0.075600
-6 Pose robot 0.868568 0.011516 6.283200 
-range observations.sensors[0] 0.002131
-range observations.sensors[1] 0.001691
-range observations.sensors[2] 0.001526
-range observations.sensors[3] 0.001526
-range observations.sensors[4] 0.001692
-range observations.sensors[5] 0.002132
-range observations.sensors[6] 0.003320
-range observations.sensors[7] 0.009636
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 1.881670
-noised range sensors[0] 0.002131
-noised range sensors[1] 0.001691
-noised range sensors[2] 0.001526
-noised range sensors[3] 0.001526
-noised range sensors[4] 0.001692
-noised range sensors[5] 0.002132
-noised range sensors[6] 0.003320
-noised range sensors[7] 0.009636
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 1.881670 quantized destination 1 
-quantized inputs 1
-intensity 5.054248 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.002131
-right side sensor[1] 0.001691
-right side sensor[2] 0.001526
-right side sensor[3] 0.001526
-right side sensor[4] 0.001692
-right side sensor[5] 0.002132
-right side sensor[6] 0.003320
-right side sensor[7] 0.009636
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.002957
-Average left side 0.100000
-intensity 0 obstacles 1 dest 1
-Angle light 1.881670
-LEFT
-Present State: 4 TURNING LEFT, OBSTACLE RIGHT
-Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
-movement without noise: angle  0.785400 distance 0.000000
-
-
- ************************************************************
-distance destination 0.444807 threshold 0.075600
-7 Pose robot 0.868568 0.011516 0.785400 
-range observations.sensors[0] 0.001750
-range observations.sensors[1] 0.001585
-range observations.sensors[2] 0.001863
-range observations.sensors[3] 0.002564
-range observations.sensors[4] 0.004878
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 1.096285
-noised range sensors[0] 0.001750
-noised range sensors[1] 0.001585
-noised range sensors[2] 0.001863
-noised range sensors[3] 0.002564
-noised range sensors[4] 0.004878
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 1.096285 quantized destination 3 
-quantized inputs 1
-intensity 5.054248 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.001750
-right side sensor[1] 0.001585
-right side sensor[2] 0.001863
-right side sensor[3] 0.002564
-right side sensor[4] 0.004878
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.039080
-Average left side 0.100000
-intensity 0 obstacles 1 dest 3
-Angle light 1.096285
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
-
-
- ************************************************************
-distance destination 0.431925 threshold 0.075600
-8 Pose robot 0.889782 0.032729 0.785400 
-range observations.sensors[0] 0.022964
-range observations.sensors[1] 0.023890
-range observations.sensors[2] 0.028085
-range observations.sensors[3] 0.038657
-range observations.sensors[4] 0.073532
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 1.158107
-noised range sensors[0] 0.022964
-noised range sensors[1] 0.023890
-noised range sensors[2] 0.028085
-noised range sensors[3] 0.038657
-noised range sensors[4] 0.073532
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 1.158107 quantized destination 3 
-quantized inputs 0
-intensity 5.360226 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.022964
-right side sensor[1] 0.023890
-right side sensor[2] 0.028085
-right side sensor[3] 0.038657
-right side sensor[4] 0.073532
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.060891
-Average left side 0.100000
-intensity 0 obstacles 1 dest 3
-Angle light 1.158107
-LEFT
-Present State: 4 TURNING LEFT, OBSTACLE RIGHT
-Student FSM behavior avoidance destination: angle  0.785400 distance 0.000000
-movement without noise: angle  0.785400 distance 0.000000
-
-
- ************************************************************
-distance destination 0.431925 threshold 0.075600
-9 Pose robot 0.889782 0.032729 1.570800 
-range observations.sensors[0] 0.032134
-range observations.sensors[1] 0.050053
-range observations.sensors[2] 0.100000
-range observations.sensors[3] 0.100000
-range observations.sensors[4] 0.100000
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.050054
-range observations.sensors[15] 0.032135
-light source angle 0.372707
-noised range sensors[0] 0.032134
-noised range sensors[1] 0.050053
-noised range sensors[2] 0.100000
-noised range sensors[3] 0.100000
-noised range sensors[4] 0.100000
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.050054
-noised range sensors[15] 0.032135
-angle_light 0.372707 quantized destination 3 
-quantized inputs 0
-intensity 5.360226 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.032134
-right side sensor[1] 0.050053
-right side sensor[2] 0.100000
-right side sensor[3] 0.100000
-right side sensor[4] 0.100000
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.050054
-left side sensor[15] 0.032135
-Average right side 0.085273
-Average left side 0.085274
-intensity 0 obstacles 0 dest 3
-Angle light 0.372707
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
-
-
- ************************************************************
-distance destination 0.404132 threshold 0.075600
-10 Pose robot 0.889781 0.062729 1.570800 
-range observations.sensors[0] 0.074564
-range observations.sensors[1] 0.100000
-range observations.sensors[2] 0.100000
-range observations.sensors[3] 0.100000
-range observations.sensors[4] 0.100000
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.074565
-light source angle 0.399741
-noised range sensors[0] 0.074564
-noised range sensors[1] 0.100000
-noised range sensors[2] 0.100000
-noised range sensors[3] 0.100000
-noised range sensors[4] 0.100000
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.074565
-angle_light 0.399741 quantized destination 3 
-quantized inputs 0
-intensity 6.122835 quantized intensity 0 
-
-
- **************** Student State Machine *********************
-right side sensor[0] 0.074564
-right side sensor[1] 0.100000
-right side sensor[2] 0.100000
-right side sensor[3] 0.100000
-right side sensor[4] 0.100000
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.074565
-Average right side 0.096821
-Average left side 0.096821
-intensity 0 obstacles 0 dest 3
-Angle light 0.399741
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
-
-
- ************************************************************
-distance destination 0.376679 threshold 0.075600
-11 Pose robot 0.889781 0.092729 1.570800 
+distance destination 0.421900 threshold 0.075600
+1 Pose robot 0.170000 0.160000 0.000000 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -709,7 +27,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.430742
+light source angle 6.188234
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -726,9 +44,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.430742 quantized destination 3 
+angle_light 6.188234 quantized destination 2 
 quantized inputs 0
-intensity 7.047875 quantized intensity 0 
+intensity 5.617979 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -750,17 +68,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.430742
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.170000, y = 0.160000, orientacion = 0.000000
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.420000, y = -0.040000
+Las coordenadas del campo atractivo son: Xatractivo = -0.420000; Yatractivo = 0.040000, tomando en cuenta el destino Xdestino = 0.420000; Ydestino = -0.040000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.420000, YPotencial=0.040000
+La nueva coordenada respecto al carrito es: Xcarrito=0.039820, Ycarrito = -0.003792
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.349643 threshold 0.075600
-12 Pose robot 0.889781 0.122729 1.570800 
+distance destination 0.403458 threshold 0.075600
+2 Pose robot 0.191213 0.181213 0.785400 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -777,7 +103,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.466575
+light source angle 5.345476
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -794,9 +120,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.466575 quantized destination 3 
+angle_light 5.345476 quantized destination 2 
 quantized inputs 0
-intensity 8.179929 quantized intensity 0 
+intensity 6.143337 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -818,17 +144,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.466575
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.191213, y = 0.181213, orientacion = 0.785400
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.238700, y = -0.325270
+Las coordenadas del campo atractivo son: Xatractivo = -0.238700; Yatractivo = 0.325270, tomando en cuenta el destino Xdestino = 0.238700; Ydestino = -0.325270 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.238700, YPotencial=0.325270
+La nueva coordenada respecto al carrito es: Xcarrito=0.023665, Ycarrito = -0.032248
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.323132 threshold 0.075600
-13 Pose robot 0.889781 0.152729 1.570800 
+distance destination 0.409085 threshold 0.075600
+3 Pose robot 0.191213 0.211213 1.570800 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -845,7 +179,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.508350
+light source angle 4.487527
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -862,9 +196,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.508350 quantized destination 3 
+angle_light 4.487527 quantized destination 0 
 quantized inputs 0
-intensity 9.577246 quantized intensity 0 
+intensity 5.975471 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -886,17 +220,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.508350
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.191213, y = 0.211213, orientacion = 1.570800
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.091215, y = -0.398787
+Las coordenadas del campo atractivo son: Xatractivo = 0.091215; Yatractivo = 0.398787, tomando en cuenta el destino Xdestino = -0.091215; Ydestino = -0.398787 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.091215, YPotencial=0.398787
+La nueva coordenada respecto al carrito es: Xcarrito=-0.008919, Ycarrito = -0.038993
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.297284 threshold 0.075600
-14 Pose robot 0.889781 0.182729 1.570800 
+distance destination 0.434787 threshold 0.075600
+4 Pose robot 0.170000 0.232426 2.356200 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -913,7 +255,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.557488
+light source angle 3.665436
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -930,9 +272,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.557488 quantized destination 3 
+angle_light 3.665436 quantized destination 0 
 quantized inputs 0
-intensity 11.315050 quantized intensity 0 
+intensity 5.289888 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -954,17 +296,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.557488
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.170000, y = 0.232426, orientacion = 2.356200
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.376484, y = -0.217486
+Las coordenadas del campo atractivo son: Xatractivo = 0.376484; Yatractivo = 0.217486, tomando en cuenta el destino Xdestino = -0.376484; Ydestino = -0.217486 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.376484, YPotencial=0.217486
+La nueva coordenada respecto al carrito es: Xcarrito=-0.034636, Ycarrito = -0.020008
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.272290 threshold 0.075600
-15 Pose robot 0.889781 0.212729 1.570800 
+distance destination 0.463832 threshold 0.075600
+5 Pose robot 0.140000 0.232426 3.141600 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -981,7 +331,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.615811
+light source angle 2.896762
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -998,9 +348,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.615811 quantized destination 3 
+angle_light 2.896762 quantized destination 1 
 quantized inputs 0
-intensity 13.487709 quantized intensity 0 
+intensity 4.648139 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -1022,17 +372,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.615811
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.140000, y = 0.232426, orientacion = 3.141600
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.449999, y = 0.112429
+Las coordenadas del campo atractivo son: Xatractivo = 0.449999; Yatractivo = -0.112429, tomando en cuenta el destino Xdestino = -0.449999; Ydestino = 0.112429 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.449999, YPotencial=-0.112429
+La nueva coordenada respecto al carrito es: Xcarrito=-0.038807, Ycarrito = 0.009696
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.248406 threshold 0.075600
-16 Pose robot 0.889781 0.242729 1.570800 
+distance destination 0.479960 threshold 0.075600
+6 Pose robot 0.118787 0.211213 3.927000 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -1049,7 +407,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.685627
+light source angle 2.164981
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -1066,9 +424,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.685627 quantized destination 3 
+angle_light 2.164981 quantized destination 1 
 quantized inputs 0
-intensity 16.206064 quantized intensity 0 
+intensity 4.340999 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -1090,17 +448,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.685627
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.118787, y = 0.211213, orientacion = 3.927000
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.268697, y = 0.397698
+Las coordenadas del campo atractivo son: Xatractivo = 0.268697; Yatractivo = -0.397698, tomando en cuenta el destino Xdestino = -0.268697; Ydestino = 0.397698 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.268697, YPotencial=-0.397698
+La nueva coordenada respecto al carrito es: Xcarrito=-0.022393, Ycarrito = 0.033144
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.225985 threshold 0.075600
-17 Pose robot 0.889781 0.272729 1.570800 
+distance destination 0.475172 threshold 0.075600
+7 Pose robot 0.118787 0.181213 4.712400 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -1117,7 +483,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.769780
+light source angle 1.441604
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -1134,9 +500,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.769780 quantized destination 3 
+angle_light 1.441604 quantized destination 3 
 quantized inputs 0
-intensity 19.581345 quantized intensity 0 
+intensity 4.428921 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -1158,17 +524,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.769780
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.118787, y = 0.181213, orientacion = 4.712400
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.061218, y = 0.471212
+Las coordenadas del campo atractivo son: Xatractivo = -0.061218; Yatractivo = -0.471212, tomando en cuenta el destino Xdestino = 0.061218; Ydestino = 0.471212 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.061218, YPotencial=-0.471212
+La nueva coordenada respecto al carrito es: Xcarrito=0.005153, Ycarrito = 0.039667
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.205506 threshold 0.075600
-18 Pose robot 0.889781 0.302729 1.570800 
+distance destination 0.451774 threshold 0.075600
+8 Pose robot 0.140001 0.160000 5.497800 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -1185,7 +559,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.871555
+light source angle 0.696730
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -1202,9 +576,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.871555 quantized destination 3 
+angle_light 0.696730 quantized destination 3 
 quantized inputs 0
-intensity 23.678320 quantized intensity 0 
+intensity 4.899571 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -1226,17 +600,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.871555
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.140001, y = 0.160000, orientacion = 5.497800
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.346485, y = 0.289909
+Las coordenadas del campo atractivo son: Xatractivo = -0.346485; Yatractivo = -0.289909, tomando en cuenta el destino Xdestino = 0.346485; Ydestino = 0.289909 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.346485, YPotencial=-0.289909
+La nueva coordenada respecto al carrito es: Xcarrito=0.030678, Ycarrito = 0.025669
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.187607 threshold 0.075600
-19 Pose robot 0.889780 0.332729 1.570800 
+distance destination 0.421900 threshold 0.075600
+9 Pose robot 0.170001 0.160000 6.283200 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -1253,7 +635,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 0.994245
+light source angle 6.188219
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -1270,9 +652,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 0.994245 quantized destination 3 
+angle_light 6.188219 quantized destination 2 
 quantized inputs 0
-intensity 28.411966 quantized intensity 0 
+intensity 5.617991 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -1294,17 +676,25 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 0.994245
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.170001, y = 0.160000, orientacion = 6.283200
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.419999, y = -0.040006
+Las coordenadas del campo atractivo son: Xatractivo = -0.419999; Yatractivo = 0.040006, tomando en cuenta el destino Xdestino = 0.419999; Ydestino = -0.040006 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.419999, YPotencial=0.040006
+La nueva coordenada respecto al carrito es: Xcarrito=0.039820, Ycarrito = -0.003793
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000
 
 
  ************************************************************
-distance destination 0.173090 threshold 0.075600
-20 Pose robot 0.889780 0.362729 1.570800 
+distance destination 0.403457 threshold 0.075600
+10 Pose robot 0.191214 0.181213 0.785400 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -1321,7 +711,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 1.140064
+light source angle 5.345475
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -1338,9 +728,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 1.140064 quantized destination 3 
+angle_light 5.345475 quantized destination 2 
 quantized inputs 0
-intensity 33.377666 quantized intensity 0 
+intensity 6.143351 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -1362,9 +752,17 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-intensity 0 obstacles 0 dest 3
-Angle light 1.140064
-FORWARD
-Present State: 0 FORWARD
-Student FSM behavior avoidance destination: angle  0.000000 distance 0.030000
-movement without noise: angle  0.000000 distance 0.030000
+Las coordenadas del destino originales son x = 0.590000, y = 0.120000
+Las condiciones iniciales del carrito son x = 0.191214, y = 0.181213, orientacion = 0.785400
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.238699, y = -0.325269
+Las coordenadas del campo atractivo son: Xatractivo = -0.238699; Yatractivo = 0.325269, tomando en cuenta el destino Xdestino = 0.238699; Ydestino = -0.325269 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.238699, YPotencial=0.325269
+La nueva coordenada respecto al carrito es: Xcarrito=0.023665, Ycarrito = -0.032248
+LEFT_ADVANCE
+Girando: 0.785400 grados 
+Avanzando: 0.030000 metrosStudent FSM behavior avoidance destination: angle  0.785400 distance 0.030000
+movement without noise: angle  0.785400 distance 0.030000

@@ -118,7 +118,7 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         float right_side=0;
         int value = 0;
 
-        float Tolerance = 0.5;
+        float Tolerance = 0.05;
         coord PosicionActual = dif_vectors(Position, Position);
         float origen_angle = -2.3561; 
         float range_angle = 4.7122;
@@ -130,9 +130,9 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         float d0 = 5;
         float epsilon1 = 1; 
         float epsilon2 = 1; 
-        float eta = 0.5; 
-        float delta0 = 0.5;
-        float d1 = 5; 
+        float eta = 2; 
+        float delta0 = 0.04;
+        float d1 = 10; 
        
         printf("\n\n **************** Student State Machine *********************\n");
        
@@ -171,53 +171,105 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
        //Transformar las coordenadas del destino al sistema móvil del carrito
               coord DestinoTransformado; 
               DestinoTransformado = ProyectarCoordDestinoEnCarrito(Position, Dest); 
-              printf("Las coordenadas del destino proyectadas al sistema del carrito son: x = %f, y = %f", DestinoTransformado.xc, DestinoTransformado.yc);
+              printf("Las coordenadas del destino originales son x = %f, y = %f\n", Dest.xc, Dest.yc);
+              printf("Las condiciones iniciales del carrito son x = %f, y = %f, orientacion = %f\n", Position.xc, Position.yc, Position.anglec);
+              printf("Las coordenadas del destino proyectadas al sistema del carrito son: x = %f, y = %f\n", DestinoTransformado.xc, DestinoTransformado.yc);
 
        //Calcular el campo atractivo
               coord CampoAtractivo; 
               CampoAtractivo = CalcularCampoAtractivo(PosicionActual, DestinoTransformado, d1, epsilon1, epsilon2);
-              printf("Las coordenadas del campo atractivo son: Xatractivo = %f; Yatractivo = %f, tomando en cuenta el destino Xdestino = %f; Ydestino = %f y de Posición Inicial XInicial = %f; Yinicial = %f", CampoAtractivo.xc, CampoAtractivo.yc, DestinoTransformado.xc, DestinoTransformado.yc, PosicionActual.xc, PosicionActual.yc);
+              printf("Las coordenadas del campo atractivo son: Xatractivo = %f; Yatractivo = %f, tomando en cuenta el destino Xdestino = %f; Ydestino = %f y de Posición Inicial XInicial = %f; Yinicial = %f\n", CampoAtractivo.xc, CampoAtractivo.yc, DestinoTransformado.xc, DestinoTransformado.yc, PosicionActual.xc, PosicionActual.yc);
 
-              coord CamposRepulsivos[num_sensors];
+       // Calcular Centroide de Obstáculo
+              coord ObstaculosDerecha[num_sensors/2];
+              coord ObstaculosIzquierda[num_sensors/2];
 
-              for ( int i = 0; i<num_sensors; i++){
-              float sensor_angle = origen_angle + i * delta_angle; 
+              int cuenta1 = 0, cuenta2 = 0;
 
-              if(observations.sensors[i]<THRS_SENSOR){
-
-                     CamposRepulsivos[i] = CalcularCampoRepulsivo(PosicionActual, ObtenerCoordenadasDeObstaculo(observations.sensors[i], sensor_angle), eta, d0); 
-
-              }else{
-
-                     CamposRepulsivos[i] = coord {0, 0, 0};
-
+              for (int i = 0; i < num_sensors; i++) {
+                  float sensor_angle = origen_angle + i * delta_angle;
+              
+                  if (observations.sensors[i] < THRS) {
+                      coord Obstaculo = ObtenerCoordenadasDeObstaculo(observations.sensors[i], sensor_angle);
+              
+                      if (i < num_sensors / 2) {
+                          if (cuenta1 < num_sensors / 2) {
+                              ObstaculosDerecha[cuenta1++] = Obstaculo;
+                          }
+                      } else {
+                          if (cuenta2 < num_sensors / 2) {
+                              ObstaculosIzquierda[cuenta2++] = Obstaculo;
+                          }
+                      }
+                  }
               }
 
-                     printf("Campo repulsivo[%d]: X = %f, Y = %f\n", i, CamposRepulsivos[i].xc, CamposRepulsivos[i].yc);                        
+              // Calcular centroides de cada lado
+              coord CentroideDerecho = {0, 0, 0};
+              coord CentroideIzquierdo = {0, 0, 0};
+
+              if (cuenta1 > 0) {
+                  CentroideDerecho = ObtenerCoordenadasDeCentroideObstaculo(ObstaculosDerecha, cuenta1);
               }
+              if (cuenta2 > 0) {
+                  CentroideIzquierdo = ObtenerCoordenadasDeCentroideObstaculo(ObstaculosIzquierda, cuenta2);
+              }
+
+              // Mostrar centroides
+              printf("Centroide del obstáculo a la derecha: X = %f, Y = %f\n", CentroideDerecho.xc, CentroideDerecho.yc);
+              printf("Centroide del obstáculo a la izquierda: X = %f, Y = %f\n", CentroideIzquierdo.xc, CentroideIzquierdo.yc);
+
+       // Calcular el campo repulsivo
+              coord CamposRepulsivos[2] = {{0, 0, 0}, {0, 0, 0}};
+
+              if (cuenta1 > 0) {
+                  CamposRepulsivos[0] = CalcularCampoRepulsivo(PosicionActual, CentroideDerecho, eta, d0);
+              }
+              if (cuenta2 > 0) {
+                  CamposRepulsivos[1] = CalcularCampoRepulsivo(PosicionActual, CentroideIzquierdo, eta, d0);
+              }
+
+              // Mostrar fuerzas repulsivas
+              for (int i = 0; i < 2; i++) {
+                  printf("Campo repulsivo[%d]: X = %f, Y = %f\n", i, CamposRepulsivos[i].xc, CamposRepulsivos[i].yc);
+              }
+
+
 
        //Calcular campo potencial 
-              coord CampoPotencial; 
-              CampoPotencial = CalcularCamporPotencial(CampoAtractivo, CamposRepulsivos, num_sensors); 
-              printf("Las coordenadas del campo potencial son XPotencial=%f, YPotencial=%f", CampoPotencial.xc, CampoPotencial.yc);
+             coord CampoPotencial = CalcularCamporPotencial(CampoAtractivo, CamposRepulsivos, 2); 
+              printf("Las coordenadas del campo potencial son XPotencial=%f, YPotencial=%f\n", CampoPotencial.xc, CampoPotencial.yc);
 
        //Calcular y avanzar a siguiente coordenada
-              coord PosicionNueva; 
-              PosicionNueva = CalcularNuevaPosicion(CampoPotencial, delta0); 
-              printf("La nueva coordenada respecto al carrito es: Xcarrito=%f, Ycarrito = %f", PosicionNueva.xc, PosicionNueva.yc);
+              coord PosicionNueva = CalcularNuevaPosicion(CampoPotencial, delta0); 
+              printf("La nueva coordenada respecto al carrito es: Xcarrito=%f, Ycarrito = %f\n", PosicionNueva.xc, PosicionNueva.yc);
 
               PosicionNueva.anglec = atan2(PosicionNueva.yc, PosicionNueva.xc);
               SiguientePaso = magnitude(PosicionNueva);
+              float SiguienteAngulo = abs(Position.anglec-PosicionNueva.anglec);
 
               if(Position.anglec-PosicionNueva.anglec < 0){//Girar a la derecha
-                     gen_vector = generate_output(RIGHTADVANCE, SiguientePaso, abs(Position.anglec-PosicionNueva.anglec)); 
-                     printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
-                                printf("Avanzando: %f metros", SiguientePaso); 
-                       }else{
-                                gen_vector = generate_output(LEFTADVANCE, SiguientePaso, abs(Position.anglec-PosicionNueva.anglec)); 
-                                printf("Girando: %f grados \n", abs(Position.anglec-PosicionNueva.anglec)); 
-                                printf("Avanzando: %f metros", SiguientePaso);
-                       }
+                     if(SiguientePaso<= Mag_Advance && SiguienteAngulo<=max_angle){
+                            gen_vector = generate_output(RIGHTADVANCE, SiguientePaso, SiguienteAngulo); 
+                            printf("Girando: %f grados \n", SiguienteAngulo);
+                            printf("Avanzando: %f metros", SiguientePaso);
+                     }else{
+                            gen_vector = generate_output(RIGHTADVANCE, Mag_Advance, max_angle); 
+                            printf("Girando: %f grados \n", max_angle); 
+                            printf("Avanzando: %f metros", Mag_Advance);
+                     }
+                     
+              }else{
+                     if(SiguientePaso<= Mag_Advance && SiguienteAngulo<=max_angle){
+                            gen_vector = generate_output(LEFTADVANCE, SiguientePaso, SiguienteAngulo); 
+                            printf("Girando: %f grados \n", SiguienteAngulo);
+                            printf("Avanzando: %f metros", SiguientePaso);
+                     }else{
+                            gen_vector = generate_output(LEFTADVANCE, Mag_Advance, max_angle); 
+                            printf("Girando: %f grados \n", max_angle); 
+                            printf("Avanzando: %f metros", Mag_Advance);
+                     }
+              }
 
 
        }

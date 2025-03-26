@@ -87,6 +87,7 @@ coord sum_vectors(coord vector1, coord vector2){
         coord sum; 
         sum.xc = vector1.xc + vector2.xc;
         sum.yc = vector1.yc + vector2.yc;
+        return(sum);
 }
 
 // This function is used to calculate the rotation angle for the Mvto command
@@ -1782,6 +1783,22 @@ coord ObtenerCoordenadasDeObstaculo(float Magnitud, float Angulo){
 
         return CoordenadasObstaculo;
 }
+
+coord ObtenerCoordenadasDeCentroideObstaculo(coord CoordenadasSensores[], int TamañoArreglo){
+        coord CoordenadasCentroide= {0, 0, 0}; 
+        coord SumaCoordenadas= {0, 0, 0};
+
+        for (int i =0; i<TamañoArreglo; i++){
+                SumaCoordenadas.xc += CoordenadasSensores[i].xc;
+                SumaCoordenadas.yc += CoordenadasSensores[i].yc; 
+        }
+
+        CoordenadasCentroide.xc = SumaCoordenadas.xc/TamañoArreglo;
+        CoordenadasCentroide.yc = SumaCoordenadas.yc/TamañoArreglo; 
+
+        return CoordenadasCentroide;
+}
+
 
 
 
