@@ -246,30 +246,10 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
 
               PosicionNueva.anglec = atan2(PosicionNueva.yc, PosicionNueva.xc);
               SiguientePaso = magnitude(PosicionNueva);
-              float SiguienteAngulo = abs(Position.anglec-PosicionNueva.anglec);
+              
+              gen_vector = generate_output(LEFTADVANCE, SiguientePaso, PosicionNueva.anglec); 
 
-              if(Position.anglec-PosicionNueva.anglec < 0){//Girar a la derecha
-                     if(SiguientePaso<= Mag_Advance && SiguienteAngulo<=max_angle){
-                            gen_vector = generate_output(RIGHTADVANCE, SiguientePaso, SiguienteAngulo); 
-                            printf("Girando: %f grados \n", SiguienteAngulo);
-                            printf("Avanzando: %f metros", SiguientePaso);
-                     }else{
-                            gen_vector = generate_output(RIGHTADVANCE, Mag_Advance, max_angle); 
-                            printf("Girando: %f grados \n", max_angle); 
-                            printf("Avanzando: %f metros", Mag_Advance);
-                     }
-                     
-              }else{
-                     if(SiguientePaso<= Mag_Advance && SiguienteAngulo<=max_angle){
-                            gen_vector = generate_output(LEFTADVANCE, SiguientePaso, SiguienteAngulo); 
-                            printf("Girando: %f grados \n", SiguienteAngulo);
-                            printf("Avanzando: %f metros", SiguientePaso);
-                     }else{
-                            gen_vector = generate_output(LEFTADVANCE, Mag_Advance, max_angle); 
-                            printf("Girando: %f grados \n", max_angle); 
-                            printf("Avanzando: %f metros", Mag_Advance);
-                     }
-              }
+              printf("Girando %f grados y avanzando %f metros", PosicionNueva.anglec, SiguientePaso); 
 
 
        }
