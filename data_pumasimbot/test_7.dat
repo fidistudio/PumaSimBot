@@ -1,17 +1,16 @@
-../motion_planner/GoTo_State_Machine -x 0.447500 -y 0.790000 -a 1.553900 -v 0.447500 -z 0.790000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.030000 -MaxAngle 0.785400 -selection 7 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 2
+../motion_planner/GoTo_State_Machine -x 1.609452 -y 1.824901 -a 0.365700 -v 0.455000 -z 0.155000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e random_2 -advance 0.030000 -MaxAngle 0.785400 -selection 7 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file random_2 -nn_rec 0 -nn_unk 0 -search 2
 
-observations file: ../../data_pumasimbot/obstacle.raw
+observations file: ../../data_pumasimbot/random_2.raw
 
  Radio robot 0.020000 
-( origen 0.447500 0.790000 1.553900 )
-( destination 0.447500 0.790000 )
+( origen 1.609452 1.824901 0.365700 )
+( destination 0.455000 0.155000 )
 search method 2
 
 
  ************************************************************
- reached distance destination 0.000000
-distance destination 0.000000 threshold 0.075600
-1 Pose robot 0.447500 0.790000 1.553900 
+distance destination 2.030106 threshold 0.075600
+1 Pose robot 1.609452 1.824901 0.365700 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -28,7 +27,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 4.729285
+light source angle 3.741806
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -45,10 +44,4171 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 4.729285 quantized destination 2 
+angle_light 3.741806 quantized destination 0 
 quantized inputs 0
-intensity inf quantized intensity 1 
+intensity 0.242640 quantized intensity 0 
 First or Dijkstra search, destination: angle  0.000000 distance 0.000000
-Node 0 x 0.350000 y 0.800000
-First light 0: x = 0.350000  y = 0.800000 
+ Node 100 x 1.536980 y 1.848250
+ Node 106 x 1.497050 y 1.712580
+ Node 105 x 1.501960 y 1.649930
+Node 100 x 1.536980 y 1.848250
+First light 0: x = 1.536980  y = 1.848250 
 movement without noise: angle  0.000000 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.076140 threshold 0.075600
+2 Pose robot 1.609452 1.824901 0.365700 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 2.464213
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 2.464213 quantized destination 1 
+quantized inputs 0
+intensity 172.492142 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.000000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 1.536980, y = 1.848250
+Las condiciones iniciales del carrito son x = 1.609452, y = 1.824901, orientacion = 0.365700
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.059330, y = 0.047721
+Las coordenadas del campo atractivo son: Xatractivo = 0.059330; Yatractivo = -0.047721, tomando en cuenta el destino Xdestino = -0.059330; Ydestino = 0.047721 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.059330, YPotencial=-0.047721
+La nueva coordenada respecto al carrito es: Xcarrito=-0.031169, Ycarrito = 0.025070
+LEFT_ADVANCE
+Girando 2.464213 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  2.464213 distance 0.040000
+movement without noise: angle  2.464213 distance 0.040000
+
+
+ ************************************************************
+ reached distance destination 0.036140
+distance destination 0.036140 threshold 0.075600
+3 Pose robot 1.571379 1.837167 2.829913 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.283185
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.283185 quantized destination 2 
+quantized inputs 0
+intensity 765.620911 quantized intensity 1 
+First or Dijkstra search, destination: angle  2.464213 distance 0.040000
+Node 106 x 1.497050 y 1.712580
+New Light 1: x = 1.497050  y = 1.712580 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 1.497050, y = 1.712580
+Las condiciones iniciales del carrito son x = 1.571379, y = 1.837167, orientacion = 2.829913
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.032542, y = 0.141378
+Las coordenadas del campo atractivo son: Xatractivo = -0.032542; Yatractivo = -0.141378, tomando en cuenta el destino Xdestino = 0.032542; Ydestino = 0.141378 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.032542, YPotencial=-0.141378
+La nueva coordenada respecto al carrito es: Xcarrito=0.008973, Ycarrito = 0.038981
+LEFT_ADVANCE
+Girando 1.344558 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  1.344558 distance 0.040000
+movement without noise: angle  1.344558 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.105075 threshold 0.075600
+4 Pose robot 1.550885 1.802816 4.174471 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.065238
+range observations.sensors[6] 0.084899
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.065238
+noised range sensors[6] 0.084899
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 90.573196 quantized intensity 0 
+First or Dijkstra search, destination: angle  1.344558 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.065238
+right side sensor[6] 0.084899
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.093767
+Average left side 0.100000
+Las coordenadas del destino originales son x = 1.497050, y = 1.712580
+Las condiciones iniciales del carrito son x = 1.550885, y = 1.802816, orientacion = 4.174471
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.105075, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.105075; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.105075; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.105075, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+ reached distance destination 0.065075
+distance destination 0.065075 threshold 0.075600
+5 Pose robot 1.530391 1.768465 4.174471 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.046410
+range observations.sensors[4] 0.047341
+range observations.sensors[5] 0.053671
+range observations.sensors[6] 0.069845
+range observations.sensors[7] 0.096771
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.046410
+noised range sensors[4] 0.047341
+noised range sensors[5] 0.053671
+noised range sensors[6] 0.069845
+noised range sensors[7] 0.096771
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 236.140030 quantized intensity 1 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+Node 105 x 1.501960 y 1.649930
+New Light 2: x = 1.501960  y = 1.649930 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.046410
+right side sensor[4] 0.047341
+right side sensor[5] 0.053671
+right side sensor[6] 0.069845
+right side sensor[7] 0.096771
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.076755
+Average left side 0.100000
+Las coordenadas del destino originales son x = 1.501960, y = 1.649930
+Las condiciones iniciales del carrito son x = 1.530391, y = 1.768465, orientacion = 4.174471
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.116362, y = 0.036315
+Las coordenadas del campo atractivo son: Xatractivo = -0.116362; Yatractivo = -0.036315, tomando en cuenta el destino Xdestino = 0.116362; Ydestino = 0.036315 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.011335, Y = -0.044962
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 4858.760254, Y = -19272.457031
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=4858.644043, YPotencial=-19272.494141
+La nueva coordenada respecto al carrito es: Xcarrito=-0.009778, Ycarrito = 0.038786
+LEFT_ADVANCE
+Girando 1.817753 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  1.817753 distance 0.040000
+movement without noise: angle  1.817753 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.126164 threshold 0.075600
+6 Pose robot 1.568710 1.756990 5.992224 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 4.445844
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 4.445844 quantized destination 0 
+quantized inputs 0
+intensity 62.824280 quantized intensity 0 
+First or Dijkstra search, destination: angle  1.817753 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 1.501960, y = 1.649930
+Las condiciones iniciales del carrito son x = 1.568710, y = 1.756990, orientacion = 5.992224
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.033232, y = -0.121709
+Las coordenadas del campo atractivo son: Xatractivo = 0.033232; Yatractivo = 0.121709, tomando en cuenta el destino Xdestino = -0.033232; Ydestino = -0.121709 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.033232, YPotencial=0.121709
+La nueva coordenada respecto al carrito es: Xcarrito=-0.010536, Ycarrito = -0.038587
+LEFT_ADVANCE
+Girando -1.837342 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -1.837342 distance 0.040000
+movement without noise: angle  -1.837342 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.086164 threshold 0.075600
+7 Pose robot 1.547547 1.723047 4.154882 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.082980
+range observations.sensors[3] 0.075981
+range observations.sensors[4] 0.077024
+range observations.sensors[5] 0.082057
+range observations.sensors[6] 0.090738
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.082980
+noised range sensors[3] 0.075981
+noised range sensors[4] 0.077024
+noised range sensors[5] 0.082057
+noised range sensors[6] 0.090738
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 134.693222 quantized intensity 0 
+First or Dijkstra search, destination: angle  -1.837342 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.082980
+right side sensor[3] 0.075981
+right side sensor[4] 0.077024
+right side sensor[5] 0.082057
+right side sensor[6] 0.090738
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.088598
+Average left side 0.100000
+Las coordenadas del destino originales son x = 1.501960, y = 1.649930
+Las condiciones iniciales del carrito son x = 1.547547, y = 1.723047, orientacion = 4.154882
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.086164, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.086164; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.086164; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.086164, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+ reached distance destination 0.046164
+distance destination 0.046164 threshold 0.075600
+8 Pose robot 1.526384 1.689104 4.154883 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.087901
+range observations.sensors[2] 0.071201
+range observations.sensors[3] 0.064648
+range observations.sensors[4] 0.058178
+range observations.sensors[5] 0.058049
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.087901
+noised range sensors[2] 0.071201
+noised range sensors[3] 0.064648
+noised range sensors[4] 0.058178
+noised range sensors[5] 0.058049
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 469.232300 quantized intensity 1 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+Node 124 x 0.531835 y 0.231343
+New Light 3: x = 0.531835  y = 0.231343 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.087901
+right side sensor[2] 0.071201
+right side sensor[3] 0.064648
+right side sensor[4] 0.058178
+right side sensor[5] 0.058049
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.079997
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.526384, y = 1.689104, orientacion = 4.154883
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.763210, y = -0.072692
+Las coordenadas del campo atractivo son: Xatractivo = -1.763210; Yatractivo = 0.072692, tomando en cuenta el destino Xdestino = 1.763210; Ydestino = -0.072692 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.763210, YPotencial=0.072692
+La nueva coordenada respecto al carrito es: Xcarrito=0.039966, Ycarrito = -0.001648
+LEFT_ADVANCE
+Girando -0.041204 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.041204 distance 0.040000
+movement without noise: angle  -0.041204 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.724708 threshold 0.075600
+9 Pose robot 1.503841 1.656061 4.113679 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.074079
+range observations.sensors[2] 0.048125
+range observations.sensors[3] 0.037268
+range observations.sensors[4] 0.040383
+range observations.sensors[5] 0.069356
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.074079
+noised range sensors[2] 0.048125
+noised range sensors[3] 0.037268
+noised range sensors[4] 0.040383
+noised range sensors[5] 0.069356
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.336178 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.041204 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.074079
+right side sensor[2] 0.048125
+right side sensor[3] 0.037268
+right side sensor[4] 0.040383
+right side sensor[5] 0.069356
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.071151
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.503841, y = 1.656061, orientacion = 4.113679
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.724708, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.724708; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 1.724708; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.003242, Y = -0.040532
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 2352.387207, Y = -29412.724609
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=2350.662598, YPotencial=-29412.724609
+La nueva coordenada respecto al carrito es: Xcarrito=-0.003187, Ycarrito = 0.039873
+LEFT_ADVANCE
+Girando 1.650547 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  1.650547 distance 0.040000
+movement without noise: angle  1.650547 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.728355 threshold 0.075600
+10 Pose robot 1.538575 1.636222 5.764226 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 4.609567
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 4.609567 quantized destination 0 
+quantized inputs 0
+intensity 0.334760 quantized intensity 0 
+First or Dijkstra search, destination: angle  1.650547 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.538575, y = 1.636222, orientacion = 5.764226
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.177400, y = -1.719226
+Las coordenadas del campo atractivo son: Xatractivo = 0.177400; Yatractivo = 1.719226, tomando en cuenta el destino Xdestino = -0.177400; Ydestino = -1.719226 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.177400, YPotencial=1.719226
+La nueva coordenada respecto al carrito es: Xcarrito=-0.004106, Ycarrito = -0.039789
+LEFT_ADVANCE
+Girando -1.673619 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -1.673619 distance 0.040000
+movement without noise: angle  -1.673619 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.688355 threshold 0.075600
+11 Pose robot 1.515275 1.603709 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.078099
+range observations.sensors[3] 0.088617
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.078099
+noised range sensors[3] 0.088617
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.350810 quantized intensity 0 
+First or Dijkstra search, destination: angle  -1.673619 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.078099
+right side sensor[3] 0.088617
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.095840
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.515275, y = 1.603709, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.688355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.688355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.688355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.688355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.648355 threshold 0.075600
+12 Pose robot 1.491976 1.571195 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.091370
+range observations.sensors[2] 0.093272
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.091370
+noised range sensors[2] 0.093272
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.368043 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.091370
+right side sensor[2] 0.093272
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.098080
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.491976, y = 1.571195, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.648355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.648355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.648355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.648355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.608355 threshold 0.075600
+13 Pose robot 1.468677 1.538682 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.386577 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.468677, y = 1.538682, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.608355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.608355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.608355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.608355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.568355 threshold 0.075600
+14 Pose robot 1.445377 1.506168 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.406547 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.445377, y = 1.506168, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.568355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.568355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.568355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.568355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.528355 threshold 0.075600
+15 Pose robot 1.422078 1.473654 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.428106 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.422078, y = 1.473654, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.528355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.528355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.528355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.528355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.488355 threshold 0.075600
+16 Pose robot 1.398779 1.441141 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.451426 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.398779, y = 1.441141, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.488355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.488355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.488355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.488355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.448355 threshold 0.075600
+17 Pose robot 1.375479 1.408627 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.476705 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.375479, y = 1.408627, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.448355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.448355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.448355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.448355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.408355 threshold 0.075600
+18 Pose robot 1.352180 1.376113 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.504168 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.352180, y = 1.376113, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.408355, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.408355; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.408355; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.408355, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.368356 threshold 0.075600
+19 Pose robot 1.328881 1.343600 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.534075 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.328881, y = 1.343600, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.368356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.368356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.368356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.368356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.328356 threshold 0.075600
+20 Pose robot 1.305581 1.311086 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.566724 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.305581, y = 1.311086, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.328356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.328356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.328356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.328356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.288356 threshold 0.075600
+21 Pose robot 1.282282 1.278573 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.602460 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.282282, y = 1.278573, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.288356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.288356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.288356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.288356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.248356 threshold 0.075600
+22 Pose robot 1.258983 1.246059 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.641687 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.258983, y = 1.246059, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.248356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.248356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.248356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.248356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.208356 threshold 0.075600
+23 Pose robot 1.235683 1.213545 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.684874 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.235683, y = 1.213545, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.208356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.208356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.208356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.208356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.168356 threshold 0.075600
+24 Pose robot 1.212384 1.181032 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.732571 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.212384, y = 1.181032, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.168356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.168356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.168356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.168356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.128356 threshold 0.075600
+25 Pose robot 1.189085 1.148518 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.785431 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.189085, y = 1.148518, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.128356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.128356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.128356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.128356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.088356 threshold 0.075600
+26 Pose robot 1.165785 1.116004 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.844225 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.165785, y = 1.116004, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.088356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.088356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.088356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.088356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.048356 threshold 0.075600
+27 Pose robot 1.142486 1.083491 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.099404
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.099404
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.909877 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.099404
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.099926
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.142486, y = 1.083491, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.048356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.048356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.048356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.048356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 1.008356 threshold 0.075600
+28 Pose robot 1.119187 1.050977 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.089849
+range observations.sensors[11] 0.079191
+range observations.sensors[12] 0.084124
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.089849
+noised range sensors[11] 0.079191
+noised range sensors[12] 0.084124
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 0.983495 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.089849
+left side sensor[11] 0.079191
+left side sensor[12] 0.084124
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.094146
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.119187, y = 1.050977, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.008356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -1.008356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 1.008356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-1.008356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.968356 threshold 0.075600
+29 Pose robot 1.095887 1.018464 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.069067
+range observations.sensors[12] 0.067663
+range observations.sensors[13] 0.073526
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.069067
+noised range sensors[12] 0.067663
+noised range sensors[13] 0.073526
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.066424 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.069067
+left side sensor[12] 0.067663
+left side sensor[13] 0.073526
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.088782
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.095887, y = 1.018464, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.968356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.968356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.968356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.968356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.928356 threshold 0.075600
+30 Pose robot 1.072588 0.985950 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.080409
+range observations.sensors[13] 0.062600
+range observations.sensors[14] 0.076524
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.080409
+noised range sensors[13] 0.062600
+noised range sensors[14] 0.076524
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.160301 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.080409
+left side sensor[13] 0.062600
+left side sensor[14] 0.076524
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.089942
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.072588, y = 0.985950, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.928356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.928356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.928356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.928356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.888356 threshold 0.075600
+31 Pose robot 1.049289 0.953436 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.095612
+range observations.sensors[14] 0.078204
+range observations.sensors[15] 0.093248
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.095612
+noised range sensors[14] 0.078204
+noised range sensors[15] 0.093248
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.267143 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.095612
+left side sensor[14] 0.078204
+left side sensor[15] 0.093248
+Average right side 0.100000
+Average left side 0.095883
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.049289, y = 0.953436, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.888356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.888356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.888356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.888356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.848356 threshold 0.075600
+32 Pose robot 1.025989 0.920923 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.389452 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.025989, y = 0.920923, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.848356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.848356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.848356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.848356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.808356 threshold 0.075600
+33 Pose robot 1.002690 0.888409 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.530363 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 1.002690, y = 0.888409, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.808356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.808356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.808356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.808356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.768356 threshold 0.075600
+34 Pose robot 0.979390 0.855895 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.693849 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.979390, y = 0.855895, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.768356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.768356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.768356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.768356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.728356 threshold 0.075600
+35 Pose robot 0.956091 0.823382 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 1.885004 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.956091, y = 0.823382, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.728356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.728356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.728356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.728356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.688356 threshold 0.075600
+36 Pose robot 0.932792 0.790868 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 2.110442 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.932792, y = 0.790868, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.688356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.688356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.688356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.688356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.648356 threshold 0.075600
+37 Pose robot 0.909492 0.758354 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 2.378881 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.909492, y = 0.758354, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.648356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.648356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.648356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.648356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.608356 threshold 0.075600
+38 Pose robot 0.886193 0.725841 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 2.701992 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.886193, y = 0.725841, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.608356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.608356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.608356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.608356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.568356 threshold 0.075600
+39 Pose robot 0.862894 0.693327 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 3.095699 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.862894, y = 0.693327, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.568356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.568356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.568356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.568356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.528356 threshold 0.075600
+40 Pose robot 0.839594 0.660813 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 3.582171 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.839594, y = 0.660813, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.528356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.528356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.528356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.528356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.488356 threshold 0.075600
+41 Pose robot 0.816295 0.628299 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 4.193016 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.816295, y = 0.628299, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.488356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.488356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.488356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.488356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.448356 threshold 0.075600
+42 Pose robot 0.792995 0.595786 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 4.974547 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.792995, y = 0.595786, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.448356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.448356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.448356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.448356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.408356 threshold 0.075600
+43 Pose robot 0.769696 0.563272 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 5.996827 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.769696, y = 0.563272, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.408356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.408356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.408356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.408356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.368356 threshold 0.075600
+44 Pose robot 0.746397 0.530758 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.098410
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.098410
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 7.369939 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.098410
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.099801
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.746397, y = 0.530758, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.368356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.368356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.368356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.368356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.328356 threshold 0.075600
+45 Pose robot 0.723097 0.498245 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.086651
+range observations.sensors[4] 0.088939
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.086651
+noised range sensors[4] 0.088939
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 9.274903 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.086651
+right side sensor[4] 0.088939
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.096949
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.723097, y = 0.498245, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.328356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.328356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.328356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.328356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.288356 threshold 0.075600
+46 Pose robot 0.699798 0.465731 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.083444
+range observations.sensors[3] 0.077423
+range observations.sensors[4] 0.079468
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.083444
+noised range sensors[3] 0.077423
+noised range sensors[4] 0.079468
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 12.026556 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.083444
+right side sensor[3] 0.077423
+right side sensor[4] 0.079468
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.092542
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.699798, y = 0.465731, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.288356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.288356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.288356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.288356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.248356 threshold 0.075600
+47 Pose robot 0.676499 0.433217 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.089159
+range observations.sensors[2] 0.073499
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.089159
+noised range sensors[2] 0.073499
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 16.212490 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.089159
+right side sensor[2] 0.073499
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.095332
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.676499, y = 0.433217, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.248356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.248356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.248356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.248356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.208356 threshold 0.075600
+48 Pose robot 0.653199 0.400704 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.081475
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.081475
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 23.034925 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.081475
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.097684
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.653199, y = 0.400704, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.208356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.208356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.208356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.208356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.168356 threshold 0.075600
+49 Pose robot 0.629900 0.368190 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.089600
+range observations.sensors[11] 0.080301
+range observations.sensors[12] 0.079830
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.283185
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.089600
+noised range sensors[11] 0.080301
+noised range sensors[12] 0.079830
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.283185 quantized destination 2 
+quantized inputs 0
+intensity 35.281036 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.089600
+left side sensor[11] 0.080301
+left side sensor[12] 0.079830
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.093716
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.629900, y = 0.368190, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.168356, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.168356; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.168356; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.168356, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.128356 threshold 0.075600
+50 Pose robot 0.606601 0.335676 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.076393
+range observations.sensors[11] 0.068465
+range observations.sensors[12] 0.068063
+range observations.sensors[13] 0.074961
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.076393
+noised range sensors[11] 0.068465
+noised range sensors[12] 0.068063
+noised range sensors[13] 0.074961
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 60.696793 quantized intensity 0 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.076393
+left side sensor[11] 0.068465
+left side sensor[12] 0.068063
+left side sensor[13] 0.074961
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.085985
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.606601, y = 0.335676, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.128356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.128356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.128356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.128356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.088356 threshold 0.075600
+51 Pose robot 0.583301 0.303163 4.090607 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.056629
+range observations.sensors[12] 0.056297
+range observations.sensors[13] 0.062002
+range observations.sensors[14] 0.077426
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.056629
+noised range sensors[12] 0.056297
+noised range sensors[13] 0.062002
+noised range sensors[14] 0.077426
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 128.092987 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.056629
+left side sensor[12] 0.056297
+left side sensor[13] 0.062002
+left side sensor[14] 0.077426
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.081544
+Las coordenadas del destino originales son x = 0.531835, y = 0.231343
+Las condiciones iniciales del carrito son x = 0.583301, y = 0.303163, orientacion = 4.090607
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.088356, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.088356; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.088356; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.088356, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000001 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000001 distance 0.040000
+movement without noise: angle  0.000001 distance 0.040000
+
+
+ ************************************************************
+ reached distance destination 0.048356
+distance destination 0.048356 threshold 0.075600
+52 Pose robot 0.560002 0.270649 4.090608 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.049043
+range observations.sensors[14] 0.061243
+range observations.sensors[15] 0.093738
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.049043
+noised range sensors[14] 0.061243
+noised range sensors[15] 0.093738
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 427.655670 quantized intensity 1 
+First or Dijkstra search, destination: angle  0.000001 distance 0.040000
+Final Light 16: x = 0.455000  y = 0.155000 
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.049043
+left side sensor[14] 0.061243
+left side sensor[15] 0.093738
+Average right side 0.100000
+Average left side 0.088003
+Las coordenadas del destino originales son x = 0.455000, y = 0.155000
+Las condiciones iniciales del carrito son x = 0.560002, y = 0.270649, orientacion = 4.090608
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.155166, y = -0.017986
+Las coordenadas del campo atractivo son: Xatractivo = -0.155166; Yatractivo = 0.017986, tomando en cuenta el destino Xdestino = 0.155166; Ydestino = -0.017986 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.004810, Y = 0.048806
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 1646.597290, Y = 16708.078125
+Las coordenadas del campo potencial son XPotencial=1646.442139, YPotencial=16708.095703
+La nueva coordenada respecto al carrito es: Xcarrito=-0.003923, Ycarrito = -0.039807
+LEFT_ADVANCE
+Girando -1.669021 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -1.669021 distance 0.040000
+movement without noise: angle  -1.669021 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.160578 threshold 0.075600
+53 Pose robot 0.529930 0.297025 2.421587 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 1.805333
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 1.805333 quantized destination 1 
+quantized inputs 0
+intensity 38.781582 quantized intensity 0 
+First or Dijkstra search, destination: angle  -1.669021 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.455000, y = 0.155000
+Las condiciones iniciales del carrito son x = 0.529930, y = 0.297025, orientacion = 2.421587
+Las coordenadas del destino proyectadas al sistema del carrito son: x = -0.037317, y = 0.156182
+Las coordenadas del campo atractivo son: Xatractivo = 0.037317; Yatractivo = -0.156182, tomando en cuenta el destino Xdestino = -0.037317; Ydestino = 0.156182 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=0.037317, YPotencial=-0.156182
+La nueva coordenada respecto al carrito es: Xcarrito=-0.009296, Ycarrito = 0.038905
+LEFT_ADVANCE
+Girando 1.805333 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  1.805333 distance 0.040000
+movement without noise: angle  1.805333 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.120578 threshold 0.075600
+54 Pose robot 0.511265 0.261646 4.226920 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 68.779762 quantized intensity 0 
+First or Dijkstra search, destination: angle  1.805333 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.455000, y = 0.155000
+Las condiciones iniciales del carrito son x = 0.511265, y = 0.261646, orientacion = 4.226920
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.120578, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.120578; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.120578; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.120578, YPotencial=-0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
+LEFT_ADVANCE
+Girando 0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  0.000000 distance 0.040000
+movement without noise: angle  0.000000 distance 0.040000
+
+
+ ************************************************************
+distance destination 0.080578 threshold 0.075600
+55 Pose robot 0.492600 0.226268 4.226920 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 0.000000 quantized destination 3 
+quantized inputs 0
+intensity 154.014740 quantized intensity 0 
+First or Dijkstra search, destination: angle  0.000000 distance 0.040000
+
+
+ **************** Student State Machine *********************
+right side sensor[0] 0.100000
+right side sensor[1] 0.100000
+right side sensor[2] 0.100000
+right side sensor[3] 0.100000
+right side sensor[4] 0.100000
+right side sensor[5] 0.100000
+right side sensor[6] 0.100000
+right side sensor[7] 0.100000
+left side sensor[8] 0.100000
+left side sensor[9] 0.100000
+left side sensor[10] 0.100000
+left side sensor[11] 0.100000
+left side sensor[12] 0.100000
+left side sensor[13] 0.100000
+left side sensor[14] 0.100000
+left side sensor[15] 0.100000
+Average right side 0.100000
+Average left side 0.100000
+Las coordenadas del destino originales son x = 0.455000, y = 0.155000
+Las condiciones iniciales del carrito son x = 0.492600, y = 0.226268, orientacion = 4.226920
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.080578, y = -0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.080578; Yatractivo = 0.000000, tomando en cuenta el destino Xdestino = 0.080578; Ydestino = -0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
+Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
+Campo repulsivo[0]: X = 0.000000, Y = 0.000000
+Campo repulsivo[1]: X = 0.000000, Y = 0.000000
+Las coordenadas del campo potencial son XPotencial=-0.080578, YPotencial=0.000000
+La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000000
+LEFT_ADVANCE
+Girando -0.000000 grados y avanzando 0.040000 metrosavoidance destination behavior: angle  -0.000000 distance 0.040000
+movement without noise: angle  -0.000000 distance 0.040000
+
+
+ ************************************************************
+ reached distance destination 0.040578
+distance destination 0.040578 threshold 0.075600
+56 Pose robot 0.473935 0.190890 4.226920 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.283185
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+angle_light 6.283185 quantized destination 2 
+quantized inputs 0
+intensity 607.308472 quantized intensity 1 
+First or Dijkstra search, destination: angle  -0.000000 distance 0.040000

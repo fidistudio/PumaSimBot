@@ -30,7 +30,7 @@
 #define NUM_DEST_ANGLE 8 // 2 ** NUM_BITS_DEST_ANGLE
 #define NUM_MAX_MEMORY 65535 // 2 >> 16
 #define FLG_VQ_SRT 1 // it uses a sorted VQ
-#define THRS 0.08 // Threshold to detect obstacles
+#define THRS 0.05 // Threshold to detect obstacles
 
 
 // System include files
