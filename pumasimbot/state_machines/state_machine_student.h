@@ -133,6 +133,11 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         float eta = 2; 
         float delta0 = 0.04;
         float d1 = 10; 
+
+        //Constantes de triangulacion 
+        coord Antena1; 
+        coord Antena2; 
+        coord Antena3; 
        
         printf("\n\n **************** Student State Machine *********************\n");
        
@@ -249,11 +254,34 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
               
               gen_vector = generate_output(LEFTADVANCE, SiguientePaso, PosicionNueva.anglec); 
 
-              printf("Girando %f grados y avanzando %f metros", PosicionNueva.anglec, SiguientePaso); 
-
-
-       }
+              printf("Girando %f grados y avanzando %f metros\n", PosicionNueva.anglec, SiguientePaso); 
        
+       //Triangulación de la posición del carrito
+              //Posiciones de antenas       
+              Antena1.xc = 0.1; 
+              Antena1.yc = 0.1; 
+
+              Antena2.xc = 1; 
+              Antena2.yc = 1.8; 
+
+              Antena3.xc = 1.9; 
+              Antena3.yc = 0.1;
+
+              //Radios
+              float Radio1 = CalcularMagnitudAntena_Carrito(Antena1, Position); 
+              float Radio2 = CalcularMagnitudAntena_Carrito(Antena2, Position);
+              float Radio3 = CalcularMagnitudAntena_Carrito(Antena3, Position);
+
+              printf("La magnitud de la antena1 es %f\n", Radio1); 
+              printf("La magnitud de la antena2 es %f\n", Radio2);
+              printf("La magnitud de la antena3 es %f\n", Radio3);
+
+              //Triangulacion
+              coord PosicionTriangulada = TriangularPosicion(Antena1, Radio1, Antena2, Radio2, Antena3, Radio3); 
+
+              printf("La posición del carrito es: X = %f, Y = %f\n", PosicionTriangulada.xc, PosicionTriangulada.yc);
+
+       }       
 
        
         return gen_vector;

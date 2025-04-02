@@ -1837,3 +1837,48 @@ coord CalcularNuevaPosicion(coord CampoPotencial, float delta0){
         coord NuevaPosicion = multiply_vector_scalar(CampoPotencial, -constante); 
         return NuevaPosicion; 
 }
+
+float CalcularMagnitudAntena_Carrito(coord Antena, coord Carrito){
+        coord Resta = dif_vectors(Carrito, Antena); 
+        float Modulo = magnitude(Resta); 
+        return Modulo; 
+}
+
+coord TriangularPosicion(coord Antena1, float radio1, coord Antena2, float radio2, coord Antena3, float radio3) {
+        coord PosicionTriangulada;
+    
+        // Coordenadas de las antenas
+        float x1 = Antena1.xc, y1 = Antena1.yc;
+        float x2 = Antena2.xc, y2 = Antena2.yc;
+        float x3 = Antena3.xc, y3 = Antena3.yc;
+    
+        // Radios al cuadrado
+        float r1_sq = radio1 * radio1;
+        float r2_sq = radio2 * radio2;
+        float r3_sq = radio3 * radio3;
+    
+        // Matriz del sistema de ecuaciones
+        float A1 = 2 * (x2 - x1);
+        float B1 = 2 * (y2 - y1);
+        float C1 = r1_sq - r2_sq - x1*x1 + x2*x2 - y1*y1 + y2*y2;
+    
+        float A2 = 2 * (x3 - x1);
+        float B2 = 2 * (y3 - y1);
+        float C2 = r1_sq - r3_sq - x1*x1 + x3*x3 - y1*y1 + y3*y3;
+    
+        // Determinante de la matriz
+        float D = A1 * B2 - A2 * B1;
+        if (D == 0) {
+            // Si el determinante es 0, significa que las antenas están mal posicionadas
+            PosicionTriangulada.xc = 0;
+            PosicionTriangulada.yc = 0;
+            PosicionTriangulada.anglec = 0;
+        } else {
+            // Resolviendo el sistema usando la regla de Cramer
+            PosicionTriangulada.xc = (C1 * B2 - C2 * B1) / D;
+            PosicionTriangulada.yc = (A1 * C2 - A2 * C1) / D;
+            PosicionTriangulada.anglec = 0;
+        }
+    
+        return PosicionTriangulada;
+    }
