@@ -261,11 +261,17 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
               Antena1.xc = 0.1; 
               Antena1.yc = 0.1; 
 
+              printf("La posición de la primera antena es: X = %f, Y = %f\n", Antena1.xc, Antena1.yc); 
+
               Antena2.xc = 1; 
               Antena2.yc = 1.8; 
 
+              printf("La posición de la segunda antena es: X = %f, Y = %f\n", Antena2.xc, Antena2.yc); 
+
               Antena3.xc = 1.9; 
               Antena3.yc = 0.1;
+
+              printf("La posición de la tercera antena es: X = %f, Y = %f\n", Antena3.xc, Antena3.yc); 
 
               //Radios
               float Radio1 = CalcularMagnitudAntena_Carrito(Antena1, Position); 

@@ -1,16 +1,16 @@
-../motion_planner/GoTo_State_Machine -x 0.475000 -y 1.055000 -a 0.000000 -v 1.550000 -z 0.990000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e random_1 -advance 0.030000 -MaxAngle 0.785400 -selection 6 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file random_1 -nn_rec 0 -nn_unk 0 -search 1
+../motion_planner/GoTo_State_Machine -x 0.385000 -y 1.110000 -a 0.000000 -v 1.030000 -z 1.085000 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e random_1 -advance 0.030000 -MaxAngle 0.785400 -selection 6 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file random_1 -nn_rec 0 -nn_unk 0 -search 1
 
 observations file: ../../data_pumasimbot/random_1.raw
 
  Radio robot 0.020000 
-( origen 0.475000 1.055000 0.000000 )
-( destination 1.550000 0.990000 )
+( origen 0.385000 1.110000 0.000000 )
+( destination 1.030000 1.085000 )
 search method 1
 
 
  ************************************************************
-distance destination 1.076963 threshold 0.075600
-1 Pose robot 0.475000 1.055000 0.000000 
+distance destination 0.645484 threshold 0.075600
+1 Pose robot 0.385000 1.110000 0.000000 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -27,7 +27,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 6.222794
+light source angle 6.244445
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -44,9 +44,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 6.222794 quantized destination 2 
+angle_light 6.244445 quantized destination 2 
 quantized inputs 0
-intensity 0.862180 quantized intensity 0 
+intensity 2.400096 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -68,29 +68,32 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-Las coordenadas del destino originales son x = 1.550000, y = 0.990000
-Las condiciones iniciales del carrito son x = 0.475000, y = 1.055000, orientacion = 0.000000
-Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.075000, y = -0.065000
-Las coordenadas del campo atractivo son: Xatractivo = -1.075000; Yatractivo = 0.065000, tomando en cuenta el destino Xdestino = 1.075000; Ydestino = -0.065000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Las coordenadas del destino originales son x = 1.030000, y = 1.085000
+Las condiciones iniciales del carrito son x = 0.385000, y = 1.110000, orientacion = 0.000000
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.645000, y = -0.025000
+Las coordenadas del campo atractivo son: Xatractivo = -0.645000; Yatractivo = 0.025000, tomando en cuenta el destino Xdestino = 0.645000; Ydestino = -0.025000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
 Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
 Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
 Campo repulsivo[0]: X = 0.000000, Y = 0.000000
 Campo repulsivo[1]: X = 0.000000, Y = 0.000000
-Las coordenadas del campo potencial son XPotencial=-1.075000, YPotencial=0.065000
-La nueva coordenada respecto al carrito es: Xcarrito=0.039927, Ycarrito = -0.002414
+Las coordenadas del campo potencial son XPotencial=-0.645000, YPotencial=0.025000
+La nueva coordenada respecto al carrito es: Xcarrito=0.039970, Ycarrito = -0.001549
 LEFT_ADVANCE
-Girando -0.060392 grados y avanzando 0.040000 metros
-La magnitud de la antena1 es 1.025987
-La magnitud de la antena2 es 0.911400
-La magnitud de la antena3 es 1.715415
-La posición del carrito es: X = 0.475000, Y = 1.055000
-Student FSM behavior avoidance destination: angle  -0.060392 distance 0.040000
-movement without noise: angle  -0.060392 distance 0.040000
+Girando -0.038740 grados y avanzando 0.040000 metros
+La posición de la primera antena es: X = 0.100000, Y = 0.100000
+La posición de la segunda antena es: X = 1.000000, Y = 1.800000
+La posición de la tercera antena es: X = 1.900000, Y = 0.100000
+La magnitud de la antena1 es 1.049440
+La magnitud de la antena2 es 0.924297
+La magnitud de la antena3 es 1.820803
+La posición del carrito es: X = 0.385000, Y = 1.110000
+Student FSM behavior avoidance destination: angle  -0.038740 distance 0.040000
+movement without noise: angle  -0.038740 distance 0.040000
 
 
  ************************************************************
-distance destination 1.036963 threshold 0.075600
-2 Pose robot 0.514927 1.052586 6.222808 
+distance destination 0.605484 threshold 0.075600
+2 Pose robot 0.424970 1.108451 6.244460 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -107,7 +110,7 @@ range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 6.283171
+light source angle 6.283170
 noised range sensors[0] 0.100000
 noised range sensors[1] 0.100000
 noised range sensors[2] 0.100000
@@ -124,9 +127,9 @@ noised range sensors[12] 0.100000
 noised range sensors[13] 0.100000
 noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
-angle_light 6.283171 quantized destination 2 
+angle_light 6.283170 quantized destination 2 
 quantized inputs 0
-intensity 0.929979 quantized intensity 0 
+intensity 2.727685 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -148,29 +151,32 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-Las coordenadas del destino originales son x = 1.550000, y = 0.990000
-Las condiciones iniciales del carrito son x = 0.514927, y = 1.052586, orientacion = 6.222808
-Las coordenadas del destino proyectadas al sistema del carrito son: x = 1.036963, y = -0.000016
-Las coordenadas del campo atractivo son: Xatractivo = -1.036963; Yatractivo = 0.000016, tomando en cuenta el destino Xdestino = 1.036963; Ydestino = -0.000016 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Las coordenadas del destino originales son x = 1.030000, y = 1.085000
+Las condiciones iniciales del carrito son x = 0.424970, y = 1.108451, orientacion = 6.244460
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.605484, y = -0.000009
+Las coordenadas del campo atractivo son: Xatractivo = -0.605484; Yatractivo = 0.000009, tomando en cuenta el destino Xdestino = 0.605484; Ydestino = -0.000009 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
 Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
 Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
 Campo repulsivo[0]: X = 0.000000, Y = 0.000000
 Campo repulsivo[1]: X = 0.000000, Y = 0.000000
-Las coordenadas del campo potencial son XPotencial=-1.036963, YPotencial=0.000016
+Las coordenadas del campo potencial son XPotencial=-0.605484, YPotencial=0.000009
 La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = -0.000001
 LEFT_ADVANCE
-Girando -0.000015 grados y avanzando 0.040000 metros
-La magnitud de la antena1 es 1.039031
-La magnitud de la antena2 es 0.891023
-La magnitud de la antena3 es 1.681026
-La posición del carrito es: X = 0.514927, Y = 1.052586
-Student FSM behavior avoidance destination: angle  -0.000015 distance 0.040000
-movement without noise: angle  -0.000015 distance 0.040000
+Girando -0.000016 grados y avanzando 0.040000 metros
+La posición de la primera antena es: X = 0.100000, Y = 0.100000
+La posición de la segunda antena es: X = 1.000000, Y = 1.800000
+La posición de la tercera antena es: X = 1.900000, Y = 0.100000
+La magnitud de la antena1 es 1.059519
+La magnitud de la antena2 es 0.899388
+La magnitud de la antena3 es 1.786809
+La posición del carrito es: X = 0.424970, Y = 1.108451
+Student FSM behavior avoidance destination: angle  -0.000016 distance 0.040000
+movement without noise: angle  -0.000016 distance 0.040000
 
 
  ************************************************************
-distance destination 0.996963 threshold 0.075600
-3 Pose robot 0.554854 1.050172 6.222793 
+distance destination 0.565484 threshold 0.075600
+3 Pose robot 0.464940 1.106902 6.244444 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -206,7 +212,7 @@ noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
 angle_light 0.000000 quantized destination 3 
 quantized inputs 0
-intensity 1.006101 quantized intensity 0 
+intensity 3.127223 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -228,29 +234,32 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-Las coordenadas del destino originales son x = 1.550000, y = 0.990000
-Las condiciones iniciales del carrito son x = 0.554854, y = 1.050172, orientacion = 6.222793
-Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.996963, y = 0.000000
-Las coordenadas del campo atractivo son: Xatractivo = -0.996963; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.996963; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Las coordenadas del destino originales son x = 1.030000, y = 1.085000
+Las condiciones iniciales del carrito son x = 0.464940, y = 1.106902, orientacion = 6.244444
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.565484, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.565484; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.565484; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
 Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
 Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
 Campo repulsivo[0]: X = 0.000000, Y = 0.000000
 Campo repulsivo[1]: X = 0.000000, Y = 0.000000
-Las coordenadas del campo potencial son XPotencial=-0.996963, YPotencial=-0.000000
+Las coordenadas del campo potencial son XPotencial=-0.565484, YPotencial=-0.000000
 La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
 LEFT_ADVANCE
 Girando 0.000000 grados y avanzando 0.040000 metros
-La magnitud de la antena1 es 1.053432
-La magnitud de la antena2 es 0.872007
-La magnitud de la antena3 es 1.646889
-La posición del carrito es: X = 0.554854, Y = 1.050172
+La posición de la primera antena es: X = 0.100000, Y = 0.100000
+La posición de la segunda antena es: X = 1.000000, Y = 1.800000
+La posición de la tercera antena es: X = 1.900000, Y = 0.100000
+La magnitud de la antena1 es 1.070996
+La magnitud de la antena2 es 0.875599
+La magnitud de la antena3 es 1.753068
+La posición del carrito es: X = 0.464940, Y = 1.106902
 Student FSM behavior avoidance destination: angle  0.000000 distance 0.040000
 movement without noise: angle  0.000000 distance 0.040000
 
 
  ************************************************************
-distance destination 0.956963 threshold 0.075600
-4 Pose robot 0.594781 1.047758 6.222793 
+distance destination 0.525484 threshold 0.075600
+4 Pose robot 0.504910 1.105353 6.244444 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -286,7 +295,7 @@ noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
 angle_light 0.000000 quantized destination 3 
 quantized inputs 0
-intensity 1.091967 quantized intensity 0 
+intensity 3.621433 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -308,29 +317,32 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-Las coordenadas del destino originales son x = 1.550000, y = 0.990000
-Las condiciones iniciales del carrito son x = 0.594781, y = 1.047758, orientacion = 6.222793
-Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.956963, y = 0.000000
-Las coordenadas del campo atractivo son: Xatractivo = -0.956963; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.956963; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Las coordenadas del destino originales son x = 1.030000, y = 1.085000
+Las condiciones iniciales del carrito son x = 0.504910, y = 1.105353, orientacion = 6.244444
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.525484, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.525484; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.525484; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
 Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
 Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
 Campo repulsivo[0]: X = 0.000000, Y = 0.000000
 Campo repulsivo[1]: X = 0.000000, Y = 0.000000
-Las coordenadas del campo potencial son XPotencial=-0.956963, YPotencial=-0.000000
+Las coordenadas del campo potencial son XPotencial=-0.525484, YPotencial=-0.000000
 La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
 LEFT_ADVANCE
 Girando 0.000000 grados y avanzando 0.040000 metros
-La magnitud de la antena1 es 1.069137
-La magnitud de la antena2 es 0.854442
-La magnitud de la antena3 es 1.613022
-La posición del carrito es: X = 0.594781, Y = 1.047758
+La posición de la primera antena es: X = 0.100000, Y = 0.100000
+La posición de la segunda antena es: X = 1.000000, Y = 1.800000
+La posición de la tercera antena es: X = 1.900000, Y = 0.100000
+La magnitud de la antena1 es 1.083830
+La magnitud de la antena2 es 0.853023
+La magnitud de la antena3 es 1.719596
+La posición del carrito es: X = 0.504910, Y = 1.105353
 Student FSM behavior avoidance destination: angle  0.000000 distance 0.040000
 movement without noise: angle  0.000000 distance 0.040000
 
 
  ************************************************************
-distance destination 0.916963 threshold 0.075600
-5 Pose robot 0.634708 1.045344 6.222793 
+distance destination 0.485484 threshold 0.075600
+5 Pose robot 0.544880 1.103804 6.244444 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
@@ -366,7 +378,7 @@ noised range sensors[14] 0.100000
 noised range sensors[15] 0.100000
 angle_light 0.000000 quantized destination 3 
 quantized inputs 0
-intensity 1.189313 quantized intensity 0 
+intensity 4.242772 quantized intensity 0 
 
 
  **************** Student State Machine *********************
@@ -388,21 +400,24 @@ left side sensor[14] 0.100000
 left side sensor[15] 0.100000
 Average right side 0.100000
 Average left side 0.100000
-Las coordenadas del destino originales son x = 1.550000, y = 0.990000
-Las condiciones iniciales del carrito son x = 0.634708, y = 1.045344, orientacion = 6.222793
-Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.916963, y = 0.000000
-Las coordenadas del campo atractivo son: Xatractivo = -0.916963; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.916963; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
+Las coordenadas del destino originales son x = 1.030000, y = 1.085000
+Las condiciones iniciales del carrito son x = 0.544880, y = 1.103804, orientacion = 6.244444
+Las coordenadas del destino proyectadas al sistema del carrito son: x = 0.485484, y = 0.000000
+Las coordenadas del campo atractivo son: Xatractivo = -0.485484; Yatractivo = -0.000000, tomando en cuenta el destino Xdestino = 0.485484; Ydestino = 0.000000 y de Posición Inicial XInicial = 0.000000; Yinicial = 0.000000
 Centroide del obstáculo a la derecha: X = 0.000000, Y = 0.000000
 Centroide del obstáculo a la izquierda: X = 0.000000, Y = 0.000000
 Campo repulsivo[0]: X = 0.000000, Y = 0.000000
 Campo repulsivo[1]: X = 0.000000, Y = 0.000000
-Las coordenadas del campo potencial son XPotencial=-0.916963, YPotencial=-0.000000
+Las coordenadas del campo potencial son XPotencial=-0.485484, YPotencial=-0.000000
 La nueva coordenada respecto al carrito es: Xcarrito=0.040000, Ycarrito = 0.000000
 LEFT_ADVANCE
 Girando 0.000000 grados y avanzando 0.040000 metros
-La magnitud de la antena1 es 1.086088
-La magnitud de la antena2 es 0.838418
-La magnitud de la antena3 es 1.579442
-La posición del carrito es: X = 0.634708, Y = 1.045344
+La posición de la primera antena es: X = 0.100000, Y = 0.100000
+La posición de la segunda antena es: X = 1.000000, Y = 1.800000
+La posición de la tercera antena es: X = 1.900000, Y = 0.100000
+La magnitud de la antena1 es 1.097971
+La magnitud de la antena2 es 0.831759
+La magnitud de la antena3 es 1.686408
+La posición del carrito es: X = 0.544880, Y = 1.103804
 Student FSM behavior avoidance destination: angle  0.000000 distance 0.040000
 movement without noise: angle  0.000000 distance 0.040000
