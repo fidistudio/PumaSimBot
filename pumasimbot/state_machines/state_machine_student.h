@@ -138,6 +138,7 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
         coord Antena1; 
         coord Antena2; 
         coord Antena3; 
+        float VarianzaRuido = 0.0;
        
         printf("\n\n **************** Student State Machine *********************\n");
        
@@ -274,9 +275,9 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
               printf("La posición de la tercera antena es: X = %f, Y = %f\n", Antena3.xc, Antena3.yc); 
 
               //Radios
-              float Radio1 = CalcularMagnitudAntena_Carrito(Antena1, Position); 
-              float Radio2 = CalcularMagnitudAntena_Carrito(Antena2, Position);
-              float Radio3 = CalcularMagnitudAntena_Carrito(Antena3, Position);
+              float Radio1 = CalcularMagnitudAntena_Carrito(Antena1, Position,VarianzaRuido); 
+              float Radio2 = CalcularMagnitudAntena_Carrito(Antena2, Position, VarianzaRuido);
+              float Radio3 = CalcularMagnitudAntena_Carrito(Antena3, Position, VarianzaRuido);
 
               printf("La magnitud de la antena1 es %f\n", Radio1); 
               printf("La magnitud de la antena2 es %f\n", Radio2);
@@ -287,12 +288,35 @@ AdvanceAngle reactive_students(Raw observations, int dest, int intensity, float 
 
               printf("La posición del carrito es: X = %f, Y = %f\n", PosicionTriangulada.xc, PosicionTriangulada.yc);
 
+              //Creacion de archivos para tomar muestras 
+              // Abrir archivo en modo append para no sobreescribir
+              /*FILE *archivo = fopen("SensoresConRuido.csv", "a");
+              if (archivo != NULL) {
+                  // Si el archivo está vacío, escribe el encabezado (opcional, solo la primera vez)
+                  fseek(archivo, 0, SEEK_END);
+                  if (ftell(archivo) == 0) {
+                      fprintf(archivo, "x,y,theta,sensor_id,sensor_value\n");
+                  }
+           
+                  // Guardar una línea por cada sensor
+                  for (int i = 0; i < num_sensors; i++) {
+                      fprintf(archivo, "%f,%f,%f,%d,%f\n", 
+                              Position.xc, Position.yc, Position.anglec, 
+                              i + 1, observations.sensors[i]);
+                  }
+           
+                  fclose(archivo);
+              } else {
+                  printf("Error al abrir archivo para guardar datos.\n");
+              }*/
+
+
        }       
 
        
         return gen_vector;
        
-       }
+}
 
 
                  

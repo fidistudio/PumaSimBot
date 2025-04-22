@@ -1838,10 +1838,16 @@ coord CalcularNuevaPosicion(coord CampoPotencial, float delta0){
         return NuevaPosicion; 
 }
 
-float CalcularMagnitudAntena_Carrito(coord Antena, coord Carrito){
+float random_gaussian(float mean, float variance, float *gaussian);
+
+float CalcularMagnitudAntena_Carrito(coord Antena, coord Carrito, float varianza_ruido){
         coord Resta = dif_vectors(Carrito, Antena); 
         float Modulo = magnitude(Resta); 
-        return Modulo; 
+
+        float RuidoGausiano[3];
+        random_gaussian(0.0, varianza_ruido, RuidoGausiano);
+
+        return Modulo + RuidoGausiano[1];  
 }
 
 coord TriangularPosicion(coord Antena1, float radio1, coord Antena2, float radio2, coord Antena3, float radio3) {
