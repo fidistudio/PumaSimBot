@@ -9,6 +9,7 @@
 *									     	*
 *  Compile:								     	*
 *	make -f Makefile_GoTo_State_Machine				     	*
+*	or ./compile							     	*
 *									     	*
 *                               J. Savage                                    	*
 *                                                                        	*
@@ -30,7 +31,7 @@
 #define NUM_DEST_ANGLE 8 // 2 ** NUM_BITS_DEST_ANGLE
 #define NUM_MAX_MEMORY 65535 // 2 >> 16
 #define FLG_VQ_SRT 1 // it uses a sorted VQ
-#define THRS 0.05 // Threshold to detect obstacles
+#define THRS 0.08 // Threshold to detect obstacles
 
 
 // System include files
@@ -42,10 +43,14 @@
 #include <time.h>
 #include <sys/time.h>
 #include <unistd.h>
-#include <vector>
+#include "../utilities/constants.h"
+
+//Global variables
+float K_GOAL=CNT_GOAL*MAG_ADVANCE;
+float K_INTENSITY = 1.00*K_GOAL;
+float THRS_SENSOR = 1.00; 
 
 // Robotics include files
-#include "../utilities/constants.h"
 #include "../utilities/structures.h"
 #include "../simulator/simulation.h"
 #include "../utilities/utilities.h"
@@ -58,12 +63,8 @@
 #include "../state_machines/dfs.h"
 #include "../state_machines/dijkstra.h"
 #include "../state_machines/state_machine_student.h"
-
-
-//Global variables
-float K_GOAL=CNT_GOAL*MAG_ADVANCE;
-float K_INTENSITY = 1.00*K_GOAL;
-
+#include "../behaviors/oracle.h"
+#include "../action_planner/action_planner.h"
 
 
 // it moves the robot from the origen to the destination using state machines
@@ -89,6 +90,7 @@ int go_to(Inputs inputs)
  float distance1;
  coord coord_robot;
  coord coord_dest;
+ coord new_coord;
  int flg;
  int debug=0;
  float xmv,ymv,thetamv;
@@ -109,7 +111,6 @@ int go_to(Inputs inputs)
  AdvanceAngle mov_vector_potential_fields;
  int selection = 3;
  int pr_out = 0;
- float largest_value;
  int flg_noise=1;
  float noise_advance,noise_angle;
  int label_quantize_outputs=1;
@@ -120,6 +121,7 @@ int go_to(Inputs inputs)
  int size_vq = 4;
  int num_bits_vq = 2;
  char file_hmm[250];
+ char clips_file[250];
  int flg_omnidirectional = 1;
  //int flg_mdp_angle=0;
  //float angle_mdp;
@@ -129,6 +131,15 @@ int go_to(Inputs inputs)
  int num_delay_unk = NUM_DELAY_UNK+1;
  step steps[200];
  int method = 1;  // method variable is used to select the search method, 1 is for first search, 2 Dijkstra algorithm 
+ float largest_value;
+ int num_actions;
+ Actions plan;
+ char string1[300];
+ char string2[500];
+ char action[300];
+ int next_action = 1;
+ int flg_actions = 0;
+
 
 // it reads the environment file
  sprintf(world_file,"%s%s.wrl",inputs.path,inputs.environment);
@@ -162,6 +173,7 @@ int go_to(Inputs inputs)
  selection=inputs.selection; 
  //pr_out=inputs.pr_out; 
  largest_value=inputs.largest_value;
+ THRS_SENSOR=largest_value*0.70;
  flg_noise=inputs.noise;
 
  K_GOAL=4.2*CNT_GOAL*inputs.Mag_Advance;
@@ -195,7 +207,10 @@ int go_to(Inputs inputs)
 #ifdef DEBUG
 		printf(" reached distance destination %f\n",distance1);
 #endif
-                flg= 1;
+		if(num_obs > 5) flg= 1;
+		printf("num_obs %d reached distance destination %f\n",num_obs,distance1);
+                //printf("type a number \n");
+                //scanf("%d",&tmp);
         }
 #ifdef DEBUG
         printf("distance destination %f threshold %f\n",distance1,K_GOAL);
@@ -243,6 +258,9 @@ int go_to(Inputs inputs)
 #endif
 
 	// It quantizes the inputs in file ~/robotics/utilities/utilities.h
+#ifdef DEBUG
+	printf("THRS_SENSOR %f\n",THRS_SENSOR);
+#endif
 	quantized_obs=quantize_inputs(observations,inputs.num_sensors,flg_vq,size_vq,inputs.path);
 
 	// It quantizes the destination in file ~/robotics/utilities/utilities.h
@@ -328,7 +346,7 @@ int go_to(Inputs inputs)
                 // It calculates the robot's movement using an state machine created by an student
                 state=next_state;
                 // state_machine_students in ../state_machines/state_machine_student.h
-                DistTheta = state_machine_students(observations, coord_dest, coord_robot,state,&next_state,inputs.Mag_Advance,inputs.max_angle, inputs.num_sensors);
+                DistTheta = state_machine_students(observations, quantized_attraction, quantized_intensity,state,&next_state,inputs.Mag_Advance,inputs.max_angle, inputs.num_sensors,angle_light);
 
 #ifdef DEBUG
                 printf("Student FSM behavior avoidance destination: angle  %f distance %f\n",DistTheta.angle,DistTheta.distance);
@@ -366,6 +384,8 @@ int go_to(Inputs inputs)
 		    fprintf(fpw,"( connection %f %f %f %f )\n",steps[i].x, steps[i].y,steps[i].x, steps[i].y);
 
 
+                    //printf("type a number \n");
+                    //scanf("%d",&tmp);
                     ii = 0;
                     final_x = coord_dest.xc;
                     final_y = coord_dest.yc;
@@ -383,18 +403,22 @@ int go_to(Inputs inputs)
 		    state=next_state;
 		    DistTheta.angle=0.0;
 		    DistTheta.distance=0.0;
+		    flg = 0;
 		    
                 }
                 else
                 {
                     if(flg == 1) {
                         if(flg_finish == 1){
-				fprintf(fpw,"( distance %f )\n",distance1);
- 				fprintf(fpw,"( num_steps %d )\n",num_obs);
- 				fclose(fpw);
- 				return(num_obs);
-		     }
-                     else {
+				if(flg_actions == 0){
+                                	printf("Finished Dijkstra \n");
+					fprintf(fpw,"( distance %f )\n",distance1);
+ 					fprintf(fpw,"( num_steps %d )\n",num_obs);
+ 					fclose(fpw);
+ 					return(num_obs);
+				}
+		       }
+                       else {
                             ii++;
                             if(steps[ii].node != -1)
                             {
@@ -419,16 +443,20 @@ int go_to(Inputs inputs)
                                 printf("Final Light %d: x = %f  y = %f \n",i,final_x,final_y);
 				flg=0;
                                 flg_finish = 1;
+				if(flg_actions == 1){
+					selection = 9;
+                                	//printf("Finish Dijkstra type a number \n");
+                                	//scanf("%d",&tmp);
+				}
+
                             }
-                     }
+                       }
                     }
 
 		    // It calculates the robot's movement using an state machine that avoids obstacles and goes to a light source
                     state=next_state;
-                    //DistTheta = state_machine_avoidance_destination(quantized_obs,quantized_attraction,quantized_intensity,state, &next_state,inputs.Mag_Advance,inputs.max_angle);
-					DistTheta = state_machine_students(observations, coord_dest, coord_robot,state,&next_state,inputs.Mag_Advance,inputs.max_angle, inputs.num_sensors);
-			
-					#ifdef DEBUG
+                    DistTheta = state_machine_avoidance_destination(quantized_obs,quantized_attraction,quantized_intensity,state, &next_state,inputs.Mag_Advance,inputs.max_angle);
+		    #ifdef DEBUG
                	    printf("avoidance destination behavior: angle  %f distance %f\n",DistTheta.angle,DistTheta.distance);
 		    #endif
 
@@ -437,13 +465,78 @@ int go_to(Inputs inputs)
         }
 
 	else if(selection == 8){
+                // This function sends the intensity and the quantized sensory data to a Clips node and it receives the actions that
+                // the robot needs to perfom to avoid obstacles and reach a light source according to first order logic
+                // It is located in ~/pumasimbot/behaviors/oracle.h
+                //result=oracle_clips(intensity,q_light,q_inputs,&movements,max_advance ,max_turn_angle);
+		#ifdef DEBUG
+		printf("quantized inputs %d\n",quantized_obs);
+		printf("rotation %f advance %f\n",DistTheta.angle,DistTheta.distance);
+	    	#endif
+		strcpy(clips_file,"oracle.clp");
+                DistTheta = oracle_clips(clips_file,intensity,quantized_attraction,quantized_obs,inputs.Mag_Advance,inputs.max_angle,&flg_result);
+
+                if(flg_result == 1) flg=1;
+	}
+
+	else if(selection == 9){
+                // This function sends the intensity and the quantized sensory data to a Clips node and it receives the actions that
+                // the robot needs to perfom to avoid obstacles and reach a light source according to first order logic
+                // It is located in ~/pumasimbot/behaviors/oracle.h
+                #ifdef DEBUG
+                printf("quantized inputs %d\n",quantized_obs);
+                printf("rotation %f advance %f\n",DistTheta.angle,DistTheta.distance);
+                #endif
+
+		 if(flg_actions == 0){
+
+			num_actions=action_planner(coord_robot.xc,coord_robot.yc,coord_robot.anglec,&plan);
+
+		}
+
+		for(k=next_action; k<= num_actions;k++){
+                                        printf("PLAN  to be executed: %d %s\n",k,plan.action_plan[k]);
+                               		//printf("k %d actions type a number \n",k);
+                               		//scanf("%d",&tmp);
+
+                                        sscanf(plan.action_plan[k],"%s %s %d %s",string2,string1,&j,action);
+                                        printf("action %s\n",action);
+					exe_action(fpw,action,plan.action_plan[k],coord_robot.xc,coord_robot.yc,coord_robot.anglec, &new_coord);
+                                        if(strcmp(action,"goto")==0){
+                                        	printf("GOTO new coordinates x %f y %f\n",new_coord.xc,new_coord.yc);
+						coord_dest.xc= new_coord.xc;
+                                		coord_dest.yc= new_coord.yc;
+						method = 0;
+						selection = 7;
+						flg_actions = 1;
+						flg=0;
+                                		flg_finish = 0;
+                    				flagOnce = 1;
+						next_action = k+1;
+						break;
+                                        }
+		}
+
+                //printf("k %d action %s, type a number \n",k,action);
+                //scanf("%d",&tmp);
+		if(k > num_actions){
+			strcpy(action,"end");
+                	//printf("k %d actions %s, type a number \n",k,action);
+                	//scanf("%d",&tmp);
+			exe_action(fpw,action,plan.action_plan[k],coord_robot.xc,coord_robot.yc,coord_robot.anglec, &new_coord);
+			flg=1;
+                	//if(flg_result == 1) flg=1;
+ 			flg_actions = 0;
+		}
+		
+        }
+
+	else if(selection == 10){
 
 		    DistTheta.angle=0.0;
 		    DistTheta.distance=0.0;
 
         }
-
-
         else {
                 printf("This behavior does not exist \n");
                 exit(0);
@@ -510,3 +603,5 @@ int main(int argc, char *argv[])
  return 0;
 
 }
+
+

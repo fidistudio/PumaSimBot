@@ -1,5 +1,5 @@
 echo touch GoTo_State_Machine.cpp
 touch GoTo_State_Machine.cpp
-echo make
-make
+echo make -f Makefile_GoTo_State_Machine
+make -f Makefile_GoTo_State_Machine
 

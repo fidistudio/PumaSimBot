@@ -1,12 +1,13 @@
 # pumasimbot.py 
 #from MobileRobotSimulator import *
 '''
-@author: Jesus Savage, UNAM-FI, 6-2024
+@author: Jesus Savage, UNAM-FI, 5-2025
 '''
 import os
 import tkinter as tk
 from tkinter import *
 import math
+import random
 from random import randrange, uniform
 import time
 import os
@@ -67,8 +68,10 @@ flg_unk = 0
 number_steps_total = 300
 varShowNodes   = False
 STOP = 0
-
-
+flg_line = 0
+largest_value = 0.0
+flg_start_clips = 1
+original_value = 0.0
 
 #-------------------------------------------------------------------------------------------
 #	TK Definitions
@@ -112,7 +115,7 @@ class PLANNER(object):
 		global BEHAVIOR
 		global size_vq_ext
 		global bh
-
+		global advance_robot
 
 		topLevelWindow = Tk()
 		topLevelWindow.wm_title('GUI_ROBOTS')
@@ -188,6 +191,29 @@ class PLANNER(object):
 		sensor = tk.Checkbutton(topLevelWindow, text="Show sensors", variable= var_sensor, onvalue=1, offvalue=0, command=command_sensor)
 		sensor.deselect()
 		var_sensor.set(0)
+
+
+		# Check button sensor line
+		var_line = IntVar()
+		def command_sensor_line():
+			if var_line.get() == 0:
+                                sensor_line.select()
+                                var_line.set(1)
+                                #print("Checkbutton var_line is selected")
+			else:
+                                sensor_line.deselect()
+                                var_line.set(0)
+                                #print("Checkbutton var_line is deselected")
+			#print ("Checkbutton variable var_line is ", var_line.get())
+
+		sensor_line = tk.Checkbutton(topLevelWindow, text="Show sensors lines", variable= var_line, onvalue=1, offvalue=0, command=command_sensor_line)
+		sensor_line.deselect()
+		var_line.set(0)
+
+
+
+
+
 
 	        # Check button add_noise
 		add_noise = IntVar()
@@ -283,6 +309,8 @@ class PLANNER(object):
 
 		def plot_line(x1,y1,x2,y2,color,flg):
 			global C
+			global flg_line
+			global largest_value
 
 			#print ("plot_line ")
 			#print ("x1 ",x1," y1 ",y1)
@@ -295,11 +323,19 @@ class PLANNER(object):
 			Y2 = DIM_CANVAS_Y - ( DIM_CANVAS_Y * y2 ) / dim_y
 			#print ("X2 ",X2," Y2 ",Y2)
 
+			#print("flg ",flg,"flg_line ",flg_line)
 			if flg == 1:
 				line = C.create_line(X1,Y1,X2,Y2,fill=color, arrow="last")
 			else:
-				line = C.create_line(X1,Y1,X2,Y2,fill=color)
-				id = C.create_rectangle(X2,Y2,X2+1,Y2+1, fill= "white", outline="white")
+				if flg_line == 1:
+					line = C.create_line(X1,Y1,X2,Y2,fill=color)
+					id = C.create_rectangle(X2,Y2,X2+1,Y2+1, fill= "white", outline="yellow")
+				difx = x2-x1
+				dify = y2-y1
+				mag = math.sqrt(pow(difx,2)+pow(dify,2))
+				#print("line x1 ",x1," y1 ",y1," x2 ",x2," y2 ", y2," mag ",mag)
+				if mag < 0.75*largest_value:
+					id = C.create_rectangle(X2,Y2,X2+1,Y2+1, fill= "white", outline="white")
 
 
 
@@ -397,7 +433,10 @@ class PLANNER(object):
 			print ("	5 = Student behavior 1")
 			print ("	6 = Student behavior 2")
 			print ("	7 = Behavior to look for a light source and avoid obstacles with memory (FSM), using a topological map with First Search or Dijkstra Algorithms")
-			print ("	8 = Other Algorithms")
+			print ("	8 = Search for a light source and avoid obstacles bahavior using the rule base system CLIPS")
+			print ("	9 = Action planning example using CLIPS")
+			print ("	10 = Other Algorithms\n")
+
 			#print(" ")
 			print("The enviroment can be changed in the field: World description")
 			print("The behavior file where the robot behavior is saved, after execution, can be change in the field: Robot Behavior File")
@@ -409,7 +448,82 @@ class PLANNER(object):
 		buttonHelp = Button(topLevelWindow ,width = 20, text = "HELP", bg = 'green', activebackground = 'green',command = show_help )
 		show_help()
 
+		def Start_CLIPS(): 
+			if flg_start_clips == 1:
+				#command = "~/tcpclips60-master/start.sh"
+				#command = "~/develop/tcpclips60/start.sh"
+				command = "~/develop/tcpclips60/start_planning.sh"
+				print ("Start CLIPS ",command)
+				status = os.system(command)
+				print("status ",status)
+
+
+		buttonClips = Button(topLevelWindow ,width = 20, text = "CLIPS", bg = 'green', activebackground = 'green',command = Start_CLIPS )
 		
+
+		def Start_Example(): 
+			global mouse_1_x
+			global mouse_1_y
+			global mouse_3_x
+			global mouse_3_y
+
+		    	
+			num_bh = 9
+			selection.delete(0, END)
+			selection.insert(0,str(num_bh))
+			selection_value = selection.get()
+			BEHAVIOR = selection.get()
+			number_steps_total = 15000
+			number_steps.delete(0, END)
+			number_steps.insert ( 0, str(number_steps_total) )
+			number_steps_value = number_steps.get()
+			file.delete(0, END)
+			ENVIRONMENT = "final"
+			file.insert ( 0, ENVIRONMENT )
+			File_Name = file.get()
+			file_robot.delete(0, END)
+			file_robot.insert ( 0, ENVIRONMENT)
+			File_Name_robot = file_robot.get()
+
+			togglePlotMap()
+			print_topological_map_lines()
+
+			mouse_1_x = 0.25
+			mouse_1_y = 0.25
+			angle_robot= 0
+
+			mouse_3_x = 0.50
+			mouse_3_y = 0.50
+			flg_execute = 1
+
+			if flg_execute == 1:
+				if var_mov.get() == 0:
+					C.update_idletasks()
+
+					flg_plt = 1
+					BEHAVIOR = selection.get()
+					togglePlotExecute(0,BEHAVIOR)
+
+					PATH = path.get()
+					#print ('Evaluate Robot PATH ',PATH)
+					File_Name = file.get()
+					FILE = PATH + File_Name + '.raw'
+					#print ('Evaluate Robot File_Name ',FILE)
+
+					File_Constants = PATH + 'Constants.txt'
+					partial_evaluation = readResultFile(FILE,File_Constants,0)
+					print ('Evaluation ',partial_evaluation)
+					evaluation_ind.delete(0, END)
+					evaluation_ind.insert ( 0, str(partial_evaluation))
+
+			print_topological_map_lines()
+
+
+
+		buttonExample = Button(topLevelWindow ,width = 20, text = "Example Action Planner", bg = 'green', activebackground = 'green',command = Start_Example )
+
+
+
 		def plot_polygon(num, data):
 			global C
 
@@ -580,6 +694,8 @@ class PLANNER(object):
 			global previous_data
 			global number_unk
 			global STOP
+			global flg_line
+			global largest_value
 
 			number_unk = int(movable.get())
 			PATH = path.get()
@@ -591,6 +707,8 @@ class PLANNER(object):
 			delay = 0
 			flg_mov = var_mov.get()
 			flg_sensor = var_sensor.get()
+			flg_line = var_line.get()
+			largest_value = float(largest.get())
 			flg_plot_vq = 0
 			number_steps_value = number_steps.get()
 			number_steps_total = float(number_steps_value)
@@ -662,6 +780,42 @@ class PLANNER(object):
 							x_previous=x
 							y_previous=y
 							time.sleep(0.1) # 0.1 delay seconds to see the plot of the destination
+					elif words[1] == "object": 
+							#print ('object ',words[2])
+							numNode = words[2]
+							nodeXm = float (words[3]) * DIM_CANVAS_X / dim_x
+							nodeYm = (dim_y - float (words[4])) * DIM_CANVAS_Y / dim_y
+							#print ('word[3] ' + words[3] + ' words[4] ' + words[4])
+							#print ('Xm ' + str(nodeXm) + ' Ym ' + str(nodeYm))
+							C.update()
+							id = C.create_rectangle(nodeXm, nodeYm, nodeXm+8, nodeYm+8, fill= "darkblue")
+							time.sleep(0.2) # 0.1 delay seconds to see the plot of the destination
+					elif words[1] == "new_object": 
+							#print ('object ',words[2])
+							numNode = words[2]
+							nodeXm = float (words[3]) * DIM_CANVAS_X / dim_x
+							nodeYm = (dim_y - float (words[4])) * DIM_CANVAS_Y / dim_y
+							#print ('word[3] ' + words[3] + ' words[4] ' + words[4])
+							#print ('Xm ' + str(nodeXm) + ' Ym ' + str(nodeYm))
+							C.update()
+							x = random.randint(10,14)
+							y = random.randint(10,14)
+							id = C.create_rectangle(nodeXm, nodeYm, nodeXm+x, nodeYm+y, fill= "darkblue",outline="white")
+							time.sleep(0.1) # 0.1 delay seconds to see the plot of the destination
+					elif words[1] == "clean": 
+							togglePlotMap()
+						
+					elif words[1] == "erase": 
+							#print ('object ',words[2])
+							numNode = words[2]
+							nodeXm = float (words[3]) * DIM_CANVAS_X / dim_x
+							nodeYm = (dim_y - float (words[4])) * DIM_CANVAS_Y / dim_y
+							#print ('word[3] ' + words[3] + ' words[4] ' + words[4])
+							#print ('Xm ' + str(nodeXm) + ' Ym ' + str(nodeYm))
+							C.update()
+							id = C.create_rectangle(nodeXm, nodeYm, nodeXm+8, nodeYm+8, fill= "green", outline="green")
+
+
 
 					elif words[1] == "connection":                                  #to get polygons vertex
 						X1 = float (words[2]) * DIM_CANVAS_X / dim_x
@@ -671,8 +825,9 @@ class PLANNER(object):
 						Y2 = (dim_y - float (words[5])) * DIM_CANVAS_Y / dim_y
 						#print ('connection x2 ',X2, 'y2 ',Y2)
 						C.update()
-						id = C.create_rectangle(X1, Y1, X1+2, Y1+2, fill= "darkblue")
+						#id = C.create_rectangle(X1, Y1, X1+2, Y1+2, fill= "darkblue")
 						id = C.create_rectangle(X2, Y2, X2+2, Y2+2, fill= "darkblue")
+						#line1 = C.create_line(X1,Y1,X2,Y2,fill="green", arrow="last")
 						line1 = C.create_line(X1,Y1,X2,Y2,fill="darkblue", arrow="last")
 						#line(X1,Y1,X2,Y2,fill="darkblue", arrow="last")
 						C.update_idletasks()
@@ -944,7 +1099,7 @@ class PLANNER(object):
 		label_num_sensors = tk.Label(topLevelWindow,text =  'Num. Sensors')
 		num_sensors = tk.Entry(topLevelWindow, width = 8, foreground='white',background='black')
 		num_sensors.insert ( 0, '16' )
-		num_sensors_value = num_sensors.get()
+		num_sensors_values = num_sensors.get()
       		# Origen angle sensor 
 		label_origen_angle = tk.Label(topLevelWindow,text =  'Origen angle sensor ')
 		origen_angle = tk.Entry(topLevelWindow, width = 8, foreground='white',background='black')
@@ -960,6 +1115,7 @@ class PLANNER(object):
 		advance_robot = tk.Entry(topLevelWindow, width = 8, foreground='white',background='black')
 		advance_robot.insert(0,'0.030')
 		advance_robot_value = advance_robot.get()
+		original_value = advance_robot_value
 		 # Robot's maximum angle  
 		label_max_angle_robot = tk.Label(topLevelWindow,text =  "Robot's maximum turn angle")
 		max_angle_robot = tk.Entry(topLevelWindow, width = 8, foreground='white',background='black')
@@ -1070,6 +1226,7 @@ class PLANNER(object):
 		sensor.grid({'row':1, 'column': 2})
 		noise.grid({'row':2, 'column': 2})
 		method.grid({'row':3, 'column': 2})
+		sensor_line.grid({'row':0, 'column': 3})
 		label_num_sensors.grid({'row':1, 'column': 3})        
 		num_sensors.grid({'row':1, 'column': 4})        
 		label_origen_angle.grid({'row':2, 'column': 3})        
@@ -1111,6 +1268,8 @@ class PLANNER(object):
 		buttonPlotTopological.grid({'row':7, 'column': 0})
 		buttonStop.grid({'row':8, 'column': 0})
 		buttonHelp.grid({'row':8, 'column': 1})
+		buttonClips.grid({'row':8, 'column': 2})
+		buttonExample.grid({'row':8, 'column': 3})
     
 		if num_behavior == 0:
 			self.ButtonPath(1)
@@ -1134,11 +1293,12 @@ class PLANNER(object):
 			global pose_x
 			global pose_y
 			#global radio_robot
-			#global advance_robot
+			global advance_robot
 			#global max_angle_robot
 			#global robot_command
 			global flg_plt
 			global number_unk
+			global flg_start_clips
 
 
 			flg_execute = 1
@@ -1176,6 +1336,26 @@ class PLANNER(object):
 			number_unk = 0
 			nn_rec = 0
 
+			if int(selection_value) == 8 or int(selection_value) == 9:
+				print ("Start CLIPS ",flg_start_clips)
+				if flg_start_clips == 1:
+					#command = "~/tcpclips60-master/start.sh"
+					#command = "~/develop/tcpclips60/start.sh"
+					command = "~/develop/tcpclips60/start_planning.sh"
+					print ("Start CLIPS ",command)
+					status = os.system(command)
+					print("status ",status)
+					flg_start_clips= 0
+					time.sleep(1.00)
+				advance_robot.delete(0, END)
+				advance_robot.insert(0,'0.020')
+			else:
+				advance_robot.delete(0, END)
+				advance_robot.insert(0,str(original_value))
+
+			advance_robot_value = float(advance_robot.get())
+
+
 
 			if flg_output == 1:
 				File_Output = File_Name + '_' + BEHAVIOR
@@ -1187,13 +1367,15 @@ class PLANNER(object):
 			robot_command_value = robot_command.get()
 			origin = " -x " + str(mouse_1_x) + " -y " + str(mouse_1_y) + " -a " + str(angle_robot_value)
 			destination = " -v " + str(mouse_3_x) + " -z " + str(mouse_3_y)
-			rest = " -s " + sensor + " -n " + num_sensors_value + " -t " + origen_angle_value + " -r " + range_angle_value + " -radio " + str(radio_robot_value) + " -advance " + str(advance_robot_value) + " -MaxAngle " + str(max_angle_robot_value) + " -steps " + number_steps_value + " -selection " + selection_value + " -largest " + largest_value + " -p " + PATH + " -e " + File_Name + " -noise " + str(flg_noise) + " -vq " + str(vq) + " -size_vq " + str(size_vq) + " -pr_out " + str(pr_out) + " -nn_rec " + str(nn_rec) + " -search " + str(method_top)
+			rest = " -s " + sensor + " -n " + num_sensors_values + " -t " + origen_angle_value + " -r " + range_angle_value + " -radio " + str(radio_robot_value) + " -advance " + str(advance_robot_value) + " -MaxAngle " + str(max_angle_robot_value) + " -steps " + number_steps_value + " -selection " + selection_value + " -largest " + largest_value + " -p " + PATH + " -e " + File_Name + " -noise " + str(flg_noise) + " -vq " + str(vq) + " -size_vq " + str(size_vq) + " -pr_out " + str(pr_out) + " -nn_rec " + str(nn_rec) + " -search " + str(method_top)
 
 			#print("origin ",origin)
 			#print("destination ",destination)
 			#print("rest ",rest)
 
+			#COMMAND ROBOT
 			command = robot_command_value + origin + destination + rest + " -out_file " + File_Output + " -nn_unk " + str(number_unk)  + " > " + PATH + "test_" + BEHAVIOR + ".dat"
+			#command = robot_command_value + origin + destination + rest + " -out_file " + File_Output + " -nn_unk " + str(number_unk)
 
 			print ("Robot Command: \n", command)
 			status = os.system(command)
@@ -1398,18 +1580,17 @@ class PLANNER(object):
 			sdx = np.std(xx)
 			sdy = np.std(yy)
 			sd = sdy + sdx
-			print ('Standard Deviation ', str(sd))
-
-			print ("Num_stops ",str(num_stops))
-			print ('Num.collisions ',str(num_collisions))
-			print ("Num_backwards ",str(num_backwards))
+			#print ('Standard Deviation ', str(sd))
+			#print ("Num_stops ",str(num_stops))
+			#print ('Num.collisions ',str(num_collisions))
+			#print ("Num_backwards ",str(num_backwards))
 
 			#print 'final position x ',x, ' y ',y,' angle ',tetha
 			dif_o= math.sqrt( math.pow( (xo -x),2)+math.pow( (yo -y),2))
 			dif_d= math.sqrt(math.pow( (xd -x),2)+math.pow( (yd -y),2))
 
 			command = "../Dijkstra/Dijkstra -x " + str(x) + " -y " + str(y) + " -v " + str(xd) + " -z " + str(yd) + " -p " + PATH + " -e " + File_Name + " > " + PATH + "rslt_" + BEHAVIOR + ".dat"
-			print ("Dijkstra command: ", command)
+			#print ("Dijkstra command: ", command)
 			status = os.system(command)
 			
 			#command = "tail rslt.dat"
@@ -1419,7 +1600,7 @@ class PLANNER(object):
 				file = open(FILE, 'r')
 				dummy = file.readline()
 				distance_Dijkstra = float(file.readline())
-				print ('dif_d ',str(dif_d), ' distance_Dijkstra ',str(distance_Dijkstra))
+				#print ('dif_d ',str(dif_d), ' distance_Dijkstra ',str(distance_Dijkstra))
 				file.close()
 			else:
 				distance_Dijkstra = 0
@@ -1483,7 +1664,7 @@ class PLANNER(object):
 			id = C.create_rectangle(event.x, event.y, event.x+1, event.y+1, fill= "red", outline='red')
 			x = (dim_x * event.x) / DIM_CANVAS_X
 			y = (dim_y * (DIM_CANVAS_Y-event.y)) / DIM_CANVAS_Y
-			print ("right button x ", x, " y ", y)
+			#print ("right button x ", x, " y ", y)
 			mouse_3_x = x
 			mouse_3_y = y
 
@@ -1562,6 +1743,14 @@ class PLANNER(object):
 #  MAIN
 
 if __name__ == '__main__':
-    gui_planner = PLANNER()
-    tk.mainloop()
+	gui_planner = PLANNER()
+
+#    if flg_start_clips == 1:
+	#command = "~/tcpclips60-master/start.sh"
+	#print ("Start CLIPS ",command)
+	#status = os.system(command)
+	#print("status ",status)
+	#flg_start_clips= 0
+
+	tk.mainloop()
 

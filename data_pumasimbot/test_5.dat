@@ -1,658 +1,87 @@
-../motion_planner/GoTo_State_Machine -x 0.369069 -y 0.484217 -a 0.785400 -v 0.610000 -z 0.557500 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.020000 -MaxAngle 0.785400 -selection 5 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 1
+../motion_planner/GoTo_State_Machine -x 0.350000 -y 0.437500 -a 0.000000 -v 0.860000 -z 0.437500 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.030000 -MaxAngle 0.785400 -selection 5 -largest 0.100000 -noise 1 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 1
 
 observations file: ../../data_pumasimbot/obstacle.raw
 
  Radio robot 0.020000 
-( origen 0.369069 0.484217 0.785400 )
-( destination 0.610000 0.557500 )
+( origen 0.350000 0.437500 0.000000 )
+( destination 0.860000 0.437500 )
 search method 1
 
 
  ************************************************************
-distance destination 0.251830 threshold 0.050400
-1 Pose robot 0.369069 0.484217 0.785400 
-range observations.sensors[0] 0.100000
-range observations.sensors[1] 0.100000
-range observations.sensors[2] 0.052625
-range observations.sensors[3] 0.038238
-range observations.sensors[4] 0.032529
-range observations.sensors[5] 0.030938
-range observations.sensors[6] 0.032531
-range observations.sensors[7] 0.038243
-range observations.sensors[8] 0.052638
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 5.793060
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.100000
-noised range sensors[2] 0.052625
-noised range sensors[3] 0.038238
-noised range sensors[4] 0.032529
-noised range sensors[5] 0.030938
-noised range sensors[6] 0.032531
-noised range sensors[7] 0.038243
-noised range sensors[8] 0.052638
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 5.793060 quantized destination 2 
-quantized inputs 1
-intensity 15.768358 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 1 *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.100000
-right side sensor[2] 0.052625
-right side sensor[3] 0.038238
-right side sensor[4] 0.032529
-right side sensor[5] 0.030938
-right side sensor[6] 0.032531
-right side sensor[7] 0.038243
-left side sensor[8] 0.052638
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.053138
-Average left side 0.094080
-RIGHT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.020000
-movement without noise: angle  -0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.232768 threshold 0.050400
-2 Pose robot 0.389069 0.484217 0.000000 
+distance destination 0.510000 threshold 0.075600
+1 Pose robot 0.350000 0.437500 0.000000 
 range observations.sensors[0] 0.100000
 range observations.sensors[1] 0.100000
 range observations.sensors[2] 0.100000
-range observations.sensors[3] 0.069872
-range observations.sensors[4] 0.024088
-range observations.sensors[5] 0.015467
-range observations.sensors[6] 0.012275
-range observations.sensors[7] 0.011074
-range observations.sensors[8] 0.011074
-range observations.sensors[9] 0.012276
-range observations.sensors[10] 0.015468
-range observations.sensors[11] 0.024093
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 0.320281
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.100000
-noised range sensors[2] 0.100000
-noised range sensors[3] 0.069872
-noised range sensors[4] 0.024088
-noised range sensors[5] 0.015467
-noised range sensors[6] 0.012275
-noised range sensors[7] 0.011074
-noised range sensors[8] 0.011074
-noised range sensors[9] 0.012276
-noised range sensors[10] 0.015468
-noised range sensors[11] 0.024093
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 0.320281 quantized destination 3 
-quantized inputs 3
-intensity 18.456686 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 2 *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.100000
-right side sensor[2] 0.100000
-right side sensor[3] 0.069872
-right side sensor[4] 0.024088
-right side sensor[5] 0.015467
-right side sensor[6] 0.012275
-right side sensor[7] 0.011074
-left side sensor[8] 0.011074
-left side sensor[9] 0.012276
-left side sensor[10] 0.015468
-left side sensor[11] 0.024093
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.054097
-Average left side 0.057864
-LEFT_ADVANCE TWICE
-Student reactive behavior movement avoidance destination: angle  1.570800 distance 0.020000
-movement without noise: angle  1.570800 distance 0.020000
-
-
- ************************************************************
-distance destination 0.227266 threshold 0.050400
-3 Pose robot 0.389069 0.504217 1.570800 
-range observations.sensors[0] 0.015467
-range observations.sensors[1] 0.012276
-range observations.sensors[2] 0.011075
-range observations.sensors[3] 0.011075
-range observations.sensors[4] 0.012277
-range observations.sensors[5] 0.015471
-range observations.sensors[6] 0.024098
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 4.949041
-noised range sensors[0] 0.015467
-noised range sensors[1] 0.012276
-noised range sensors[2] 0.011075
-noised range sensors[3] 0.011075
-noised range sensors[4] 0.012277
-noised range sensors[5] 0.015471
-noised range sensors[6] 0.024098
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 4.949041 quantized destination 2 
-quantized inputs 1
-intensity 19.361229 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 3 *********************
-right side sensor[0] 0.015467
-right side sensor[1] 0.012276
-right side sensor[2] 0.011075
-right side sensor[3] 0.011075
-right side sensor[4] 0.012277
-right side sensor[5] 0.015471
-right side sensor[6] 0.024098
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.025218
-Average left side 0.100000
-LEFT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  0.785400 distance 0.020000
-movement without noise: angle  0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.238310 threshold 0.050400
-4 Pose robot 0.374927 0.518359 2.356200 
-range observations.sensors[0] 0.025082
-range observations.sensors[1] 0.026374
-range observations.sensors[2] 0.031005
 range observations.sensors[3] 0.100000
 range observations.sensors[4] 0.100000
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
+range observations.sensors[5] 0.070711
+range observations.sensors[6] 0.056119
+range observations.sensors[7] 0.050627
+range observations.sensors[8] 0.050628
+range observations.sensors[9] 0.056122
+range observations.sensors[10] 0.070718
 range observations.sensors[11] 0.100000
 range observations.sensors[12] 0.100000
 range observations.sensors[13] 0.100000
 range observations.sensors[14] 0.100000
 range observations.sensors[15] 0.100000
-light source angle 4.091977
-noised range sensors[0] 0.025082
-noised range sensors[1] 0.026374
-noised range sensors[2] 0.031005
-noised range sensors[3] 0.100000
-noised range sensors[4] 0.100000
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 4.091977 quantized destination 0 
-quantized inputs 1
-intensity 17.608280 quantized intensity 0 
+light source angle 0.000000
+intensity 3.844676 angle light 0.000000 
+Random settings file ../../data_pumasimbot/random_settings_advance_angle_sensors.dat
+lidar noise mean 0.001000 variance 0.000100
+Intensity lmin -5.000000 lmax 5.000000
+Angle Light lmin -0.062832 lmax 0.062832
+with noise intensity 7.409883 angle light 5.436170 
+noised range sensors[0] 0.102170
+noised range sensors[1] 0.101601
+noised range sensors[2] 0.100568
+noised range sensors[3] 0.097885
+noised range sensors[4] 0.096536
+noised range sensors[5] 0.079938
+noised range sensors[6] 0.074346
+noised range sensors[7] 0.054539
+noised range sensors[8] 0.058560
+noised range sensors[9] 0.055714
+noised range sensors[10] 0.077280
+noised range sensors[11] 0.097586
+noised range sensors[12] 0.111769
+noised range sensors[13] 0.098515
+noised range sensors[14] 0.112885
+noised range sensors[15] 0.091722
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.088004
+right sensor 0.088448
+angle_light 5.436170 quantized destination 2 
+quantized inputs 0
+intensity 7.409883 quantized intensity 0 
 
 
- **************** Student Reactive Behavior 4 *********************
-right side sensor[0] 0.025082
-right side sensor[1] 0.026374
-right side sensor[2] 0.031005
-right side sensor[3] 0.100000
-right side sensor[4] 0.100000
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.072808
-Average left side 0.100000
+ **************** Student Reactive Behavior 1 *********************
+right side sensor[0] 0.102170
+right side sensor[1] 0.101601
+right side sensor[2] 0.100568
+right side sensor[3] 0.097885
+right side sensor[4] 0.096536
+right side sensor[5] 0.079938
+right side sensor[6] 0.074346
+right side sensor[7] 0.054539
+left side sensor[8] 0.058560
+left side sensor[9] 0.055714
+left side sensor[10] 0.077280
+left side sensor[11] 0.097586
+left side sensor[12] 0.111769
+left side sensor[13] 0.098515
+left side sensor[14] 0.112885
+left side sensor[15] 0.091722
+Average right side 0.088448
+Average left side 0.088004
+intensity 0 obstacles 0 dest 2
 RIGHT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.020000
-movement without noise: angle  -0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.235851 threshold 0.050400
-5 Pose robot 0.374927 0.538359 1.570800 
-range observations.sensors[0] 0.035467
-range observations.sensors[1] 0.028149
-range observations.sensors[2] 0.025395
-range observations.sensors[3] 0.025396
-range observations.sensors[4] 0.100000
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 4.793632
-noised range sensors[0] 0.035467
-noised range sensors[1] 0.028149
-noised range sensors[2] 0.025395
-noised range sensors[3] 0.025396
-noised range sensors[4] 0.100000
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 4.793632 quantized destination 2 
-quantized inputs 1
-intensity 17.977249 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 5 *********************
-right side sensor[0] 0.035467
-right side sensor[1] 0.028149
-right side sensor[2] 0.025395
-right side sensor[3] 0.025396
-right side sensor[4] 0.100000
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.064301
-Average left side 0.100000
-RIGHT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.020000
-movement without noise: angle  -0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.220988 threshold 0.050400
-6 Pose robot 0.389069 0.552501 0.785400 
-range observations.sensors[0] 0.100000
-range observations.sensors[1] 0.035392
-range observations.sensors[2] 0.018611
-range observations.sensors[3] 0.013523
-range observations.sensors[4] 0.011504
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 5.520408
-noised range sensors[0] 0.100000
-noised range sensors[1] 0.035392
-noised range sensors[2] 0.018611
-noised range sensors[3] 0.013523
-noised range sensors[4] 0.011504
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 5.520408 quantized destination 2 
-quantized inputs 1
-intensity 20.476860 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 6 *********************
-right side sensor[0] 0.100000
-right side sensor[1] 0.035392
-right side sensor[2] 0.018611
-right side sensor[3] 0.013523
-right side sensor[4] 0.011504
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.059879
-Average left side 0.100000
-RIGHT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.020000
-movement without noise: angle  -0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.200993 threshold 0.050400
-7 Pose robot 0.409069 0.552501 0.000000 
-range observations.sensors[0] 0.003536
-range observations.sensors[1] 0.002806
-range observations.sensors[2] 0.002532
-range observations.sensors[3] 0.002532
-range observations.sensors[4] 0.002807
-range observations.sensors[5] 0.003536
-range observations.sensors[6] 0.005508
-range observations.sensors[7] 0.015981
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 0.024873
-noised range sensors[0] 0.003536
-noised range sensors[1] 0.002806
-noised range sensors[2] 0.002532
-noised range sensors[3] 0.002532
-noised range sensors[4] 0.002807
-noised range sensors[5] 0.003536
-noised range sensors[6] 0.005508
-noised range sensors[7] 0.015981
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 0.024873 quantized destination 3 
-quantized inputs 1
-intensity 24.753483 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 7 *********************
-right side sensor[0] 0.003536
-right side sensor[1] 0.002806
-right side sensor[2] 0.002532
-right side sensor[3] 0.002532
-right side sensor[4] 0.002807
-right side sensor[5] 0.003536
-right side sensor[6] 0.005508
-right side sensor[7] 0.015981
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.004905
-Average left side 0.100000
-LEFT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  0.785400 distance 0.020000
-movement without noise: angle  0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.187013 threshold 0.050400
-8 Pose robot 0.423211 0.566643 0.785400 
-range observations.sensors[0] 0.016839
-range observations.sensors[1] 0.017499
-range observations.sensors[2] 0.020571
-range observations.sensors[3] 0.028314
-range observations.sensors[4] 0.053854
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 5.448875
-noised range sensors[0] 0.016839
-noised range sensors[1] 0.017499
-noised range sensors[2] 0.020571
-noised range sensors[3] 0.028314
-noised range sensors[4] 0.053854
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 5.448875 quantized destination 2 
-quantized inputs 1
-intensity 28.592842 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 8 *********************
-right side sensor[0] 0.016839
-right side sensor[1] 0.017499
-right side sensor[2] 0.020571
-right side sensor[3] 0.028314
-right side sensor[4] 0.053854
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.054635
-Average left side 0.100000
-RIGHT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.020000
-movement without noise: angle  -0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.167040 threshold 0.050400
-9 Pose robot 0.443211 0.566643 0.000000 
-range observations.sensors[0] 0.023533
-range observations.sensors[1] 0.018676
-range observations.sensors[2] 0.016848
-range observations.sensors[3] 0.016849
-range observations.sensors[4] 0.018677
-range observations.sensors[5] 0.023534
-range observations.sensors[6] 0.036653
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 6.228421
-noised range sensors[0] 0.023533
-noised range sensors[1] 0.018676
-noised range sensors[2] 0.016848
-noised range sensors[3] 0.016849
-noised range sensors[4] 0.018677
-noised range sensors[5] 0.023534
-noised range sensors[6] 0.036653
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 6.228421 quantized destination 2 
-quantized inputs 1
-intensity 35.839443 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 9 *********************
-right side sensor[0] 0.023533
-right side sensor[1] 0.018676
-right side sensor[2] 0.016848
-right side sensor[3] 0.016849
-right side sensor[4] 0.018677
-right side sensor[5] 0.023534
-right side sensor[6] 0.036653
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.031846
-Average left side 0.100000
-LEFT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  0.785400 distance 0.020000
-movement without noise: angle  0.785400 distance 0.020000
-
-
- ************************************************************
-distance destination 0.154413 threshold 0.050400
-10 Pose robot 0.457353 0.580785 0.785400 
-range observations.sensors[0] 0.030981
-range observations.sensors[1] 0.032367
-range observations.sensors[2] 0.038050
-range observations.sensors[3] 0.052371
-range observations.sensors[4] 0.099613
-range observations.sensors[5] 0.100000
-range observations.sensors[6] 0.100000
-range observations.sensors[7] 0.100000
-range observations.sensors[8] 0.100000
-range observations.sensors[9] 0.100000
-range observations.sensors[10] 0.100000
-range observations.sensors[11] 0.100000
-range observations.sensors[12] 0.100000
-range observations.sensors[13] 0.100000
-range observations.sensors[14] 0.100000
-range observations.sensors[15] 0.100000
-light source angle 5.346408
-noised range sensors[0] 0.030981
-noised range sensors[1] 0.032367
-noised range sensors[2] 0.038050
-noised range sensors[3] 0.052371
-noised range sensors[4] 0.099613
-noised range sensors[5] 0.100000
-noised range sensors[6] 0.100000
-noised range sensors[7] 0.100000
-noised range sensors[8] 0.100000
-noised range sensors[9] 0.100000
-noised range sensors[10] 0.100000
-noised range sensors[11] 0.100000
-noised range sensors[12] 0.100000
-noised range sensors[13] 0.100000
-noised range sensors[14] 0.100000
-noised range sensors[15] 0.100000
-angle_light 5.346408 quantized destination 2 
-quantized inputs 1
-intensity 41.940445 quantized intensity 0 
-
-
- **************** Student Reactive Behavior 10 *********************
-right side sensor[0] 0.030981
-right side sensor[1] 0.032367
-right side sensor[2] 0.038050
-right side sensor[3] 0.052371
-right side sensor[4] 0.099613
-right side sensor[5] 0.100000
-right side sensor[6] 0.100000
-right side sensor[7] 0.100000
-left side sensor[8] 0.100000
-left side sensor[9] 0.100000
-left side sensor[10] 0.100000
-left side sensor[11] 0.100000
-left side sensor[12] 0.100000
-left side sensor[13] 0.100000
-left side sensor[14] 0.100000
-left side sensor[15] 0.100000
-Average right side 0.069173
-Average left side 0.100000
-RIGHT_ADVANCE
-Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.020000
-movement without noise: angle  -0.785400 distance 0.020000
+TURN RIGHT
+Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.030000
+movement without noise: angle  -0.785400 distance 0.030000
+Random settings file ../../data_pumasimbot/random_settings_advance_angle_sensors.dat
+movement with noise: angle  -0.820351 distance 0.031648

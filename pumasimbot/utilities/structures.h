@@ -12,6 +12,7 @@ typedef struct _Behavior{
         int flg_vector;
 } Behavior;
 
+
 typedef struct _AdvanceAngle{
         float distance,angle;
 } AdvanceAngle;
@@ -83,4 +84,41 @@ typedef struct _centroid{
         int num;
         float x,y,theta,sensors[NUM_MAX_SENSORS];
 } Centroid;
+
+
+typedef struct actions_
+{
+        char action_plan[100][300];
+        int status[100];
+} Actions;
+
+
+typedef struct rooms_
+{
+        char name[100][300];
+        float x[100];
+        float y[100];
+        float z[100];
+} Rooms;
+
+
+typedef struct furniture_
+{
+        char name[100][300];
+        char room[100][300];
+        float x[100];
+        float y[100];
+        float z[100];
+} Furniture;
+
+
+typedef struct objects_
+{
+        char name[100][300];
+        char room[100][300];
+        float x[100];
+        float y[100];
+        float z[100];
+} Objects;
+
 

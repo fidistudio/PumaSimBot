@@ -34,7 +34,9 @@
 
 ; External walls
 ( polygon wall wall1  1.90 0.00 1.90 2.00 2.00 2.00 2.00 0.00 )
-( polygon wall wall2  0.00 0.00 0.00 2.00 0.10 2.00 0.10 0.00 )
+;( polygon wall wall2  0.00 0.00 0.00 2.00 0.10 2.00 0.10 0.00 )
+( polygon wall wall2  0.00 0.00 0.00 0.90 0.10 0.90 0.10 0.00 )
+( polygon wall wall21  0.00 1.20 0.00 2.00 0.10 2.00 0.10 1.20 )
 ( polygon wall wall3  0.10 0.00 0.10 0.10 1.90 0.10 1.90 0.00 )
 ( polygon wall wall4  0.10 1.90 0.10 2.00 1.90 2.00 1.90 1.90 )
 

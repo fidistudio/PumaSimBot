@@ -1,13 +1,17 @@
 // Defining constants
 
 #define LIMIT_SIM 150  // Maximum number of steps
-#define MAG_ADVANCE 0.04 // Advance magnitude in meters 
+#define MAG_ADVANCE 0.03 // Advance magnitude in meters 
 #define TURN_ANGLE PI/8.0
 //#define CNT_GOAL 0.2 // constant to find a threshold to reach the goal 
 #define CNT_GOAL 0.6 // constant to find a threshold to reach the goal 
 //#define K_GOAL CNT_GOAL*MAG_ADVANCE 
 //#define K_INTENSITY 1.00*K_GOAL 
-#define THRS_SENSOR 1.5*MAG_ADVANCE // 
+//#define THRS_SENSOR 1.5*MAG_ADVANCE // 
+#define LARGEST_VALUE_SENSOR 0.1
+//#define THRS_SENSOR 0.96*LARGEST_VALUE_SENSOR // 
+//#define THRS_SENSOR 0.70*LARGEST_VALUE_SENSOR // 
+//#define THRS_SENSOR 0.70 // 
 #ifndef PI
 #define PI 3.1415926535f
 #endif

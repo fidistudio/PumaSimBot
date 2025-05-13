@@ -1,6 +1,6 @@
 CC = g++ 
 
-LIBS = -lm -lpthread
+LIBS = -lm -lpthread -L/usr/lib/x86_64-linux-gnu/ -lboost_filesystem -lboost_thread -lboost_system -lboost_chrono
 
 OBJS= GoTo_State_Machine.o 
 PRG_OBJS= GoTo_State_Machine.cpp
