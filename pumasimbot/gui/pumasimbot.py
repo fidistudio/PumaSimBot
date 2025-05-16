@@ -452,10 +452,12 @@ class PLANNER(object):
 			if flg_start_clips == 1:
 				#command = "~/tcpclips60-master/start.sh"
 				#command = "~/develop/tcpclips60/start.sh"
-				command = "~/develop/tcpclips60/start_planning.sh"
+				os.chdir("/home/robousr/pumasimbot_workspace/develop/tcpclips60")
+				command = "./start_planning.sh"
 				print ("Start CLIPS ",command)
 				status = os.system(command)
 				print("status ",status)
+				
 
 
 		buttonClips = Button(topLevelWindow ,width = 20, text = "CLIPS", bg = 'green', activebackground = 'green',command = Start_CLIPS )

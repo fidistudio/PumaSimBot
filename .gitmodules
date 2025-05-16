@@ -1,0 +1,3 @@
+[submodule "develop/tcpclips60"]
+	path = develop/tcpclips60
+	url = https://github.com/kyordhel/tcpclips60.git
