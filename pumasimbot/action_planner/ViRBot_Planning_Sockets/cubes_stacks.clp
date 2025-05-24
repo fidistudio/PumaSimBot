@@ -3,23 +3,35 @@
 ;;; cubes_stacks.clp
 ;;;===================================================
 
+;;Plantilla para bloques agrupados
+(deftemplate grouped-goal (multislot blocks))
+
+;;Plantilla para objetivos individuales
 (deftemplate goal (slot move)(slot on-top-of))
 
 (deffacts initial-state
-	(get-initial-state stacks 2)
+	(get-initial-state stacks 3)
 	(stack A B C)
 	(stack D E F)
 	(stack G H I)
 	;; Objetivos: todos los bloques deben estar en el piso
-	(goal (move A)(on-top-of floor))
-	(goal (move B)(on-top-of floor))
-	(goal (move C)(on-top-of floor))
-	(goal (move D)(on-top-of floor))
-	(goal (move E)(on-top-of floor))
-	(goal (move F)(on-top-of floor))
-	(goal (move G)(on-top-of floor))
-	(goal (move H)(on-top-of floor))
- 	(goal (move I)(on-top-of floor))
+	(grouped-goal (blocks A B C D E F G H I))
+)
+
+;;Función recursiva para expandir la lista de bloques
+(deffunction expand-goals (?lst)
+	(if (not (eq ?lst nil)) then
+		(assert (goal (move (nth$ 1 ?lst)) (on-top-of floor)))
+		(expand-goals (rest$ ?lst))
+	)
+)
+
+;;Regla para activar la expansión
+(defrule expand-goal
+	?goal <- (grouped-goal (blocks $?blist))
+	=>
+	(retract ?goal)
+	(expand-goals $?blist)
 )
 
 (defrule move-directly
