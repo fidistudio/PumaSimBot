@@ -90,4 +90,3 @@
   	(assert (building (done $?rest1 ?base ?next))) 
   	(printout t "Meta: colocar " ?next " sobre " ?base "." crlf)
 )
-
